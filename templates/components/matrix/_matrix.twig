@@ -1,0 +1,12 @@
+{% for chunk in entry.matrix %}
+    {% if chunk.type == 'markup' %}
+        {{ chunk }}
+    {% else %}
+        {% switch chunk.entry.type.handle %}
+            {% case 'matrixImage' %}
+                {% include "components/matrix/_image" %}
+            {% case 'matrixTextImage' %}
+                {% include "components/matrix/_textImage" %}
+        {% endswitch %}
+    {% endif %}
+{% endfor %}

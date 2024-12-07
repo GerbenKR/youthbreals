@@ -1,0 +1,110 @@
+color: null
+fieldLayouts:
+  9b1b599e-3b0d-410e-aeef-964421aa7b0a:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: fa3d7748-2bb0-427f-87f2-1bd8a7bb3fd7
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 672ff7e5-1a72-4fc4-a1d4-a97441e26779 # text
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 245140e0-ffc3-444e-8db4-92171810e6ff
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: e529eacf-7c43-4b0d-b7a8-124fee4d34de # CTA
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d1febbe0-e9e2-4fa5-a7c0-f151dbf8dd05
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 4510a52c-d2a5-480a-9139-61207c1c0b48 # Image
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6a8428f5-5b75-4e59-b437-907caa05d419
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: bc0428b0-cc69-43d9-85c4-85b3719f296a # Image position
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 94e5a0ab-8ae2-449b-93f6-19782c5a8a13
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhoud
+        uid: 4ec7073b-5c01-4c99-a383-68e6ee410ca7
+        userCondition: null
+handle: matrixTextImage
+hasTitleField: true
+icon: image
+name: 'Matrix | Text + Image'
+showSlugField: false
+showStatusField: false
+slugTranslationKeyFormat: ''
+slugTranslationMethod: site
+titleFormat: ''
+titleTranslationKeyFormat: ''
+titleTranslationMethod: site

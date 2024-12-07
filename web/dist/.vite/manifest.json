@@ -1,0 +1,20 @@
+{
+  "_alpinejs-CnGfEmWN.js": {
+    "file": "assets/alpinejs-CnGfEmWN.js",
+    "name": "alpinejs"
+  },
+  "src/css/style.pcss": {
+    "file": "assets/css-DTnxNduo.css",
+    "src": "src/css/style.pcss",
+    "isEntry": true
+  },
+  "src/js/app.js": {
+    "file": "assets/app-BMWYLero.js",
+    "name": "app",
+    "src": "src/js/app.js",
+    "isEntry": true,
+    "imports": [
+      "_alpinejs-CnGfEmWN.js"
+    ]
+  }
+}

@@ -1,0 +1,151 @@
+color: cyan
+fieldLayouts:
+  dcf8c4bd-c198-4b9b-837e-3d9589cdde42:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: aa6dc266-31e5-49eb-a1e3-b5a4d21d2042
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 28386272-18fb-49fe-a577-621f6e30eab0 # Hero title
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 03f1ae80-41f5-4275-8806-8f3e4cbae682
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 4f4672b8-b625-45df-92a9-c398d1d4cd63 # Hero description
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 0f1f8a0e-9087-478f-95af-ea6a2a87225d
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: b11847cc-da8d-47c7-bba3-200d6e853d6e # Hero image
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b32c3d34-7535-4b14-8dcd-db9d7ab05e67
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: e529eacf-7c43-4b0d-b7a8-124fee4d34de # CTA
+            handle: heroCta
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 92b1ea6d-a425-4ae0-9f9f-b05aa3c4dbed
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: 22dcbffd-a395-49af-9b55-dbe6bee83475
+            userCondition: null
+          -
+            elementCondition: null
+            fieldUid: 9c0fe570-11a0-4087-9cc4-b3f4dae01ea6 # Matrix
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 910fc571-306e-45b9-b4d9-99b847d11ba5
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhoud
+        uid: 3eee8136-f536-4d76-915a-fae527a3cfc3
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 7ed5075f-76f4-4d1f-bc63-24574242960c # SEO
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f6d95a2c-cbc6-4948-932c-054bbc392ed1
+            userCondition: null
+            warning: null
+            width: 100
+        name: SEO
+        uid: 0ba5a06c-cfc0-4b6a-ae1a-0014c334a849
+        userCondition: null
+handle: home
+hasTitleField: true
+icon: house
+name: Home
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: ''
+slugTranslationMethod: site
+titleFormat: ''
+titleTranslationKeyFormat: ''
+titleTranslationMethod: site

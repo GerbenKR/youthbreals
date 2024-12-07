@@ -1,0 +1,61 @@
+{% macro image(asset, class, desktopWidth = 1920, desktopHeight = 1080, mobileWidth, mobileHeight, lazy = true, fetchpriority = "low", pictureClass, quality = 100, mode = 'crop', position = 'top-center', format = 'webp') %}
+
+{# {% set errorImage = 'https://niicenl.s3.eu-west-1.amazonaws.com/error-backup-image.jpeg' %} #}
+{% set errorImage = '' %}
+
+{% if asset is defined and asset is not null %}
+    {% if asset.extension != 'svg' %}
+        {% set mobileWidth = mobileWidth ? mobileWidth : desktopWidth %}
+        {% set mobileHeight = mobileHeight ? mobileHeight : desktopHeight %}
+
+        {% set desktopDefault = {
+            mode: mode,
+            width: desktopWidth,
+            height: desktopHeight,
+            quality: quality,
+            format: format
+        } %}
+
+        {% set mobileDefault = {
+            mode: mode,
+            width: mobileWidth,
+            height: mobileHeight,
+            quality: quality,
+            format: format
+        } %}
+
+
+        <picture class="{{ pictureClass ?? 'w-full h-full block' }}">
+            <source srcset="{{ asset.getUrl(mobileDefault) }}" media="(max-width: 767px)">
+            <source srcset="{{ asset.getUrl(desktopDefault) }}" media="(min-width: 767px)">
+            <img
+                class="h-full w-full {{class}}"
+                src="{{ asset.getUrl(desktopDefault) }}"
+                {% if lazy %} loading="lazy" {% endif %}
+                fetchpriority="{{ fetchpriority }}"
+                onError="this.onerror=null;this.src='{{ errorImage }}';this.previousElementSibling.srcset='{{ errorImage }}';"
+                width="{{ asset.getWidth(desktopDefault) }}"
+                height="{{ asset.getHeight(desktopDefault) }}"
+                alt="{{ asset.title }}"
+                title="{{ asset.title }}">
+        </picture>
+    {% elseif asset.extension == 'svg' %}
+        <img
+          src="{{ asset.url }}"
+          alt="{{ asset.title }}"
+          title="{{ asset.title }}"
+          width="{{ asset.width }}"
+          height="{{ asset.height }}"
+          fetchpriority="{{ fetchpriority }}"
+          {% if lazy %} loading="lazy" {% endif %}
+          onError="this.onerror=null;this.src='{{ errorImage }}';">
+    {% endif %}
+    {% else %}
+        <img
+            src="{{ errorImage }}"
+            alt="NoImage"
+            title="NoImage"
+            class="h-full w-full {{class}}"
+            onError="this.onerror=null;this.src='{{ errorImage }}';">
+  {% endif %}
+{% endmacro %}

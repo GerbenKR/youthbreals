@@ -1,0 +1,22 @@
+{% import 'macros/_utils' as utils %}
+
+<section class="container py-10 flex flex-col lg:flex-row lg:justify-between gap-4 border-b border-gray-100">
+    <div class="lg:w-1/2">
+        <h1>{{ entry.heroTitle }}</h1>
+        <p>{{ entry.heroDescription }}</p>
+
+        {% if entry.heroCta|length %}
+            <div class="mt-3 flex items-center gap-2">
+                {% for cta in entry.heroCta %}
+                    <a {{ cta.linkField.getLinkAttributes() }} class="bg-green-100 py-4 px-5 text-black">{{ cta.linkField.getCustomText() }}</a>
+                {% endfor %}
+            </div>
+        {% endif %}
+    </div>
+
+    {% if entry.heroImage|length %}
+        <div>
+            {{ utils.image(entry.heroImage.one(), 'w-full h-full object-cover pointer-events-none', 600, 300, 600, 300) }}
+        </div>
+    {% endif %}
+</section>

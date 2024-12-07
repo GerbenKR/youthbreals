@@ -1,0 +1,27 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - 8d688872-0500-4e64-969e-4c7d4055d5cf # Blog detail
+handle: blog
+maxAuthors: 1
+name: Blog
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primaire invoer-pagina'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: none
+siteSettings:
+  9620f8bc-de2f-4a52-ac63-94cba3bed665: # YouthBreaks
+    enabledByDefault: true
+    hasUrls: true
+    template: pages/blog/_entry.twig
+    uriFormat: 'blog/{slug}'
+type: channel

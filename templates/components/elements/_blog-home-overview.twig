@@ -1,0 +1,20 @@
+{% set blogs = craft.entries.section('blog').all() %}
+
+<section class="container">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div>
+            <h2 class="mb-2 font-semibold text-2xl">Met onze blogs kunnen jullie je voorbereiden op de leukste jongerenvakantie 2024!</h2>
+            <p>Met onze blog posts kunnen jullie je goed voorbereiden op jullie (zuip) vakanatie. We geven je tips, to-do lijstjes en natuurlijk ook de tofste activiteiten.</p>
+        </div>
+
+        {% for blog in blogs %}
+            <a href="{{blog.url}}">
+                {% include "components/cards/_square-card" with {
+                    title: blog.title,
+                    image: blog.heroImage.one() ?? null,
+                    date: blog.postDate|date("j M, Y")|lower
+                } %}
+            </a>
+        {% endfor %}
+    </div>
+</section>

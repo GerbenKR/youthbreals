@@ -1,0 +1,42 @@
+fieldLayouts:
+  48bd6fc0-62cd-4cb9-8e69-ba197552edfd:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 4c8a2273-4983-45d3-8852-6ae588a5dcf0 # Site name
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: af259f62-fec3-430c-974a-3b4bcdb3a88e
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 6c70dec0-60bb-41ba-8577-35f5b06b9e13 # Site color
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 59855bc6-81a5-42fb-b925-0c98adc6e845
+            userCondition: null
+            warning: null
+            width: 100
+        name: Site
+        uid: 0b71cf65-4348-4a22-b2b1-ee89f4e368c0
+        userCondition: null
+handle: site
+name: Site
+sortOrder: 1

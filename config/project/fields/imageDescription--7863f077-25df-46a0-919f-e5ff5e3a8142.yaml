@@ -1,0 +1,16 @@
+columnSuffix: null
+handle: imageDescription
+instructions: null
+name: 'Image description'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: enlarged
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\PlainText

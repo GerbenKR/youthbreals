@@ -1,0 +1,214 @@
+dateModified: 1733585861
+elementSources:
+  craft\elements\Entry:
+    -
+      defaultSort:
+        - postDate
+        - desc
+      disabled: false
+      key: '*'
+      tableAttributes:
+        - status
+        - section
+        - postDate
+        - expiryDate
+        - link
+      type: native
+    -
+      heading: Eenmalig
+      type: heading
+    -
+      defaultSort:
+        - title
+        - asc
+      disabled: false
+      key: 'single:fcf1ca76-1f7b-4ad5-b408-3efc786f7fc0' # Home
+      tableAttributes:
+        - status
+        - postDate
+        - expiryDate
+        - link
+      type: native
+    -
+      heading: Structuren
+      type: heading
+    -
+      defaultSort:
+        - structure
+        - asc
+      disabled: false
+      key: 'section:a8e27dbb-40ec-4978-b8f0-f850e150d88e' # Content page
+      tableAttributes:
+        - status
+        - postDate
+        - expiryDate
+        - link
+      type: native
+email:
+  fromEmail: gerbenkr@hotmail.nl
+  fromName: YouthBreaks
+  transportType: craft\mail\transportadapters\Sendmail
+fs:
+  local:
+    hasUrls: true
+    name: local
+    settings:
+      path: '@webroot/media'
+    type: craft\fs\Local
+    url: '@web/media'
+  r2:
+    hasUrls: true
+    name: R2
+    settings:
+      accountId: $CLOUDFLARE_R2_ACCOUNT_ID
+      addSubfolderToRootUrl: true
+      bucket: youthbreaks
+      bucketSelectionMode: manual
+      expires: ''
+      keyId: $CLOUDFLARE_R2_ACCESS_KEY
+      makeUploadsPublic: false
+      secret: $CLOUDFLARE_R2_SECRET_ACCESS_KEY
+      storageClass: ''
+      subfolder: ''
+    type: jrrdnx\cloudflarer2\Fs
+    url: 'https://cdn03.central-affiliate.nl'
+meta:
+  __names__:
+    0c806500-1776-487d-9169-5c11d46ea615: 'Matrix | Text + Image' # Matrix | Text + Image
+    1ac1c857-31dd-42a4-89fa-400ff951b829: 'Content page' # Content page
+    1fa00b89-1304-4bcc-b401-99ad445d9241: 'YouthBreaks EN' # YouthBreaks EN
+    3d4370d8-2bc1-4dd4-b518-30aaacc5b408: 'Navigation link' # Navigation link
+    4c8a2273-4983-45d3-8852-6ae588a5dcf0: 'Site name' # Site name
+    4f4672b8-b625-45df-92a9-c398d1d4cd63: 'Hero description' # Hero description
+    6c70dec0-60bb-41ba-8577-35f5b06b9e13: 'Site color' # Site color
+    6f4df8bc-cbb1-45fa-832f-7083c97bf063: CTA # CTA
+    7d26659a-16fd-4fbd-b167-a8a5e832265f: Home # Home
+    7ed5075f-76f4-4d1f-bc63-24574242960c: SEO # SEO
+    7f489f6a-a1cd-4973-8f9f-3ac6ede0bfad: 'Matrix | Title + Text' # Matrix | Title + Text
+    8d688872-0500-4e64-969e-4c7d4055d5cf: 'Blog detail' # Blog detail
+    9c0fe570-11a0-4087-9cc4-b3f4dae01ea6: Matrix # Matrix
+    15bfb93a-1737-4d9e-9fc0-977b5f2e3805: Site # Site
+    61af5648-4e25-4452-b3d6-9b822c0b4489: 'Tailwind Color' # Tailwind Color
+    86aa91de-bde7-44da-8bd5-d29a95b3f28c: 'YouthBreaks EN - Lloret de mar' # YouthBreaks EN - Lloret de mar
+    306f4436-3d40-48fd-9265-1f7daaa5fa05: 'Page body' # Page body
+    616e4fd4-0f3f-428b-96b5-3ae84ffb392d: 'YouthBreaks EN' # YouthBreaks EN
+    672ff7e5-1a72-4fc4-a1d4-a97441e26779: text # text
+    1643ba74-6496-465b-8193-45ec88e23cd7: 'YouthBreaks NL - Albufeira' # YouthBreaks NL - Albufeira
+    4510a52c-d2a5-480a-9139-61207c1c0b48: Image # Image
+    7863f077-25df-46a0-919f-e5ff5e3a8142: 'Image description' # Image description
+    9620f8bc-de2f-4a52-ac63-94cba3bed665: YouthBreaks # YouthBreaks
+    154402bc-4e13-4443-a177-5a7bc2b016b2: 'Matrix | Image' # Matrix | Image
+    28386272-18fb-49fe-a577-621f6e30eab0: 'Hero title' # Hero title
+    55585797-ba95-46c1-bb84-fd409985700f: 'Site theme' # Site theme
+    81132275-2a11-4ee2-b595-4ed825b4d827: 'YouthBreaks EN - albufeira' # YouthBreaks EN - albufeira
+    a8e27dbb-40ec-4978-b8f0-f850e150d88e: 'Content page' # Content page
+    b079f368-871a-4c20-9fa2-b69dce13d7ce: Navigation # Navigation
+    b5986cbe-32ff-44d7-a869-f9e164c3a385: Entries # Entries
+    b9723ca6-1d73-46e2-a144-756cd3e36e11: Navigation # Navigation
+    b11847cc-da8d-47c7-bba3-200d6e853d6e: 'Hero image' # Hero image
+    bc0428b0-cc69-43d9-85c4-85b3719f296a: 'Image position' # Image position
+    c0b15c5d-7161-40ce-82ae-d90d4efe91c0: Simple # Simple
+    c58ce353-a590-49b2-93a4-f2abd4f104f3: 'YouthBreaks NL - Lloret de Mar' # YouthBreaks NL - Lloret de Mar
+    cf812ba9-66c0-45ff-a29b-d90997bf2f43: Blog # Blog
+    d2cae82f-ab32-40f8-96e4-971e21d04bcc: 'Matrix | Cards Entries' # Matrix | Cards Entries
+    d3cf3f36-3d63-4ce1-976b-b3bdaf15c5b1: 'Page description' # Page description
+    dd682aa7-0a0c-411b-bf86-5a33528acd7b: Local # Local
+    e4d3d6ad-aef0-4a56-80e1-b2e942135a5a: Source # Source
+    e39f4ef5-8dec-40fe-83ef-107c617981bc: 'Page title' # Page title
+    e529eacf-7c43-4b0d-b7a8-124fee4d34de: CTA # CTA
+    f0af8fb8-1d45-4e49-9ca1-c62742f5df23: 'Public Schema' # Public Schema
+    f095b797-97b3-4a81-bb94-e9cd40fe3b4d: 'Link field' # Link field
+    f2b78056-d43b-4b41-93dc-57fef1d1975d: 'YouthBreaks NL' # YouthBreaks NL
+    fcf1ca76-1f7b-4ad5-b408-3efc786f7fc0: Home # Home
+    fe7c25f5-8c08-4e32-9225-5926ac780e12: 'Cloudflare R2 Global' # Cloudflare R2 Global
+plugins:
+  ckeditor:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.0.0.0
+  cloudflare-r2:
+    edition: standard
+    enabled: true
+    schemaVersion: '1.0'
+  expanded-singles:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  seomatic:
+    edition: standard
+    enabled: true
+    licenseKey: HL9Z9AYU9DEDF6PTKWW97S87
+    schemaVersion: 3.0.12
+    settings:
+      addHrefLang: true
+      addPaginatedHreflang: true
+      addXDefaultHrefLang: true
+      alwaysIncludeCanonicalUrls: false
+      cpTitlePrefix: '⚙ '
+      cspNonce: ''
+      cspScriptSrcPolicies:
+        -
+          __assoc__:
+            -
+              - policy
+              - '''self'''
+      devModeCpTitlePrefix: '🚧⚙ '
+      devModeTitlePrefix: '🚧 '
+      displayAnalysisSidebar: true
+      displayPreviewSidebar: true
+      enableDebugToolbarPanel: true
+      enableJsonLdEndpoint: false
+      enableMetaContainerEndpoint: false
+      enableSeoFileLinkEndpoint: false
+      environment: live
+      excludeNonCanonicalUrls: false
+      generatorEnabled: true
+      headersEnabled: true
+      includeHomepageInBreadcrumbs: false
+      lowercaseCanonicalUrl: true
+      manuallySetEnvironment: false
+      maxDescriptionLength: 155
+      maxTitleLength: 70
+      metaCacheDuration: 0
+      pluginName: SEO
+      regenerateSitemapsAutomatically: true
+      renderEnabled: true
+      separatorChar: '|'
+      sidebarDisplayPreviewTypes:
+        - google
+        - twitter
+        - facebook
+      siteGroupsSeparate: true
+      siteUrlOverride: ''
+      sitemapsEnabled: true
+      socialMediaPreviewTarget: true
+      submitSitemaps: true
+      truncateDescriptionTags: true
+      truncateTitleTags: true
+      xDefaultSite: 0
+  super-table:
+    edition: standard
+    enabled: true
+    schemaVersion: 4.0.0
+  typedlinkfield:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.0.0
+  vite:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+system:
+  edition: solo
+  live: true
+  name: JongerenVakanties.nu
+  retryDuration: null
+  schemaVersion: 5.5.0.0
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  require2fa: false
+  requireEmailVerification: true

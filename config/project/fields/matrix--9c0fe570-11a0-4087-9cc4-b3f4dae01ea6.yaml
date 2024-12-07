@@ -1,0 +1,25 @@
+columnSuffix: null
+handle: matrix
+instructions: null
+name: Matrix
+searchable: false
+settings:
+  availableTransforms: ''
+  availableVolumes: '*'
+  ckeConfig: 306f4436-3d40-48fd-9265-1f7daaa5fa05 # Page body
+  createButtonLabel: null
+  defaultTransform: null
+  enableSourceEditingForNonAdmins: false
+  entryTypes:
+    - 0c806500-1776-487d-9169-5c11d46ea615 # Matrix | Text + Image
+    - 154402bc-4e13-4443-a177-5a7bc2b016b2 # Matrix | Image
+    - d2cae82f-ab32-40f8-96e4-971e21d04bcc # Matrix | Cards Entries
+  purifierConfig: null
+  purifyHtml: true
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  showWordCount: false
+  wordLimit: null
+translationKeyFormat: null
+translationMethod: site
+type: craft\ckeditor\Field

@@ -1,0 +1,73 @@
+@layer base {
+    .text-container p {
+        @apply md:text-p text-mobile-p mb-6;
+    }
+    .h6,
+    .text-container h6 {
+        @apply md:text-h6 text-mobile-h6 mb-2 text-black;
+    }
+    .h5,
+    .text-container h5 {
+        @apply md:text-h5 text-mobile-h5 mb-2 text-black;
+    }
+    .h4,
+    .text-container h4 {
+        @apply md:text-h4 text-mobile-h4 mb-2 text-black;
+    }
+    .h3,
+    .text-container h3 {
+        @apply md:text-h3 text-mobile-h3 mb-2 text-black;
+    }
+    .h2,
+    .text-container h2 {
+        @apply md:text-h2 text-mobile-h2 mb-2 text-black;
+    }
+    .h1,
+    .text-container h1 {
+        @apply md:text-h1 text-mobile-h1 mb-2 text-black;
+    }
+    .text-container small,
+    .small {
+        @apply mb-0 md:text-sm text-mobile-sm text-black;
+    }
+    .xs {
+        @apply mb-0 md:text-xs text-mobile-xs text-black;
+    }
+
+    .ol,
+    .ul,
+    .text-container ol,
+    .text-container ul {
+        @apply my-4 list-outside pl-5;
+
+        li {
+            @apply relative pl-1 mb-2;
+
+            &::marker {
+                /* @apply text-primary font-medium; */
+                @apply font-medium;
+            }
+        }
+    }
+
+    .ul,
+    .text-container ul {
+        @apply list-disc;
+    }
+
+    .ol,
+    .text-container ol {
+        @apply list-decimal;
+    }
+
+    .text-container {
+        p a,
+        span a {
+            @apply underline;
+        }
+    }
+
+    .text-container strong {
+        @apply font-bold;
+    }
+}

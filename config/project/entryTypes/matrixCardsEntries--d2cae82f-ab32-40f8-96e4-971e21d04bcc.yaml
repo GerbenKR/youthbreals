@@ -1,0 +1,80 @@
+color: null
+fieldLayouts:
+  8d4c7b07-0872-460a-b9a5-24e86f0532a6:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 7ebdfe41-7086-4b6d-8733-a80e9a1e3bb4
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 672ff7e5-1a72-4fc4-a1d4-a97441e26779 # text
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e3608172-a270-4b4a-adc6-371f215de98e
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: b5986cbe-32ff-44d7-a869-f9e164c3a385 # Entries
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6e2312db-020e-4439-99d7-dd1f4375355b
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhoud
+        uid: 07a82194-979e-4059-8bde-5cbfeacabce5
+        userCondition: null
+handle: matrixCardsEntries
+hasTitleField: true
+icon: gem
+name: 'Matrix | Cards Entries'
+showSlugField: false
+showStatusField: true
+slugTranslationKeyFormat: ''
+slugTranslationMethod: site
+titleFormat: ''
+titleTranslationKeyFormat: ''
+titleTranslationMethod: site

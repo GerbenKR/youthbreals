@@ -1,0 +1,9 @@
+baseUrl: $DEFAULT_NL
+enabled: true
+handle: defaultNL
+hasUrls: true
+language: nl-NL
+name: YouthBreaks
+primary: true
+siteGroup: f2b78056-d43b-4b41-93dc-57fef1d1975d # YouthBreaks NL
+sortOrder: 1

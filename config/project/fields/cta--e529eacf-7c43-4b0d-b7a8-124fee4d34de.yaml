@@ -1,0 +1,21 @@
+columnSuffix: null
+handle: cta
+instructions: null
+name: CTA
+searchable: false
+settings:
+  contentTable: ''
+  createButtonLabel: null
+  entryTypes:
+    - 6f4df8bc-cbb1-45fa-832f-7083c97bf063 # CTA
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: null
+  propagationKeyFormat: null
+  propagationMethod: none
+  showCardsInGrid: false
+  viewMode: blocks
+translationKeyFormat: null
+translationMethod: site
+type: verbb\supertable\fields\SuperTableField

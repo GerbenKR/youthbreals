@@ -1,0 +1,6 @@
+{% import 'macros/_utils' as utils %}
+
+<div class="py-10 w-[1000px] mx-auto">
+    {{ utils.image(chunk.entry.image.one(), '', 1000, 500, 500, 500) }}
+    <p class="pt-4 pl-10">{{ chunk.entry.imageDescription }}</p>
+</div>

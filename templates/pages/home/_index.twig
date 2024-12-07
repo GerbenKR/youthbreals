@@ -1,0 +1,35 @@
+{% extends "layouts/_default" %}
+
+{% block content %}
+
+    {% include "components/hero/_home" %}
+
+    {% include "components/elements/_blog-home-overview" %}
+
+    <article class="container py-10 text-container">
+        {% include "components/matrix/_matrix" %}
+    </article>
+
+    {# <div class="mt-10 container">
+        <h1>H1 Dit is een mooi stuk tekst of niet?</h1>
+        <h2>h2 Dit is een mooi stuk tekst of niet?</h2>
+        <h3>h3 Dit is een mooi stuk tekst of niet?</h3>
+        <h4>h4 Dit is een mooi stuk tekst of niet?</h4>
+        <h5>h5 Dit is een mooi stuk tekst of niet?</h5>
+        <h6>h6 Dit is een mooi stuk tekst of niet?</h6>
+
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque ipsum necessitatibus cum excepturi repellendus. Vel suscipit labore inventore non expedita cum blanditiis, aspernatur necessitatibus unde officia, aperiam minus eveniet deserunt.</p>
+
+        <ul>
+            <li>Test</li>
+            <li>Test</li>
+            <li>Test</li>
+        </ul>
+
+        <ol>
+            <li>Test</li>
+            <li>Test</li>
+            <li>Test</li>
+        </ol>
+    </div> #}
+{% endblock content %}

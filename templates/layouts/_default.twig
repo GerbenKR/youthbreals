@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="{{ craft.app.language }}">
+
+        <head>
+            <meta charset="utf-8"/>
+
+            {# {% set prefetchUrls = [
+                "https://x.cloudfront.net"
+            ] %}
+            {% set headerLink = "Link: " %}
+            {% for url in prefetchUrls %}
+                {% set headerLink = headerLink ~ "<#{url}>; rel=dns-prefetch;," %}
+                {% set headerLink = headerLink ~ "<#{url}>; rel=preconnect; crossorigin;" %}
+                {% if not loop.last %}
+                    {% set headerLink = headerLink ~ "," %}
+                {% endif %}
+                <link rel="dns-prefetch" href="{{ url }}">
+                <link rel="preconnect" href="{{ url }}" crossorigin>
+            {% endfor %}
+            {% header headerLink %} #}
+
+            <link rel="preload" href="{{ craft.vite.asset("src/css/style.pcss") }}" as="style"/>
+            <link rel="stylesheet" href="{{ craft.vite.asset("src/css/style.pcss") }}"></link>
+
+            {{ craft.vite.script("src/js/app.js", true) }}
+
+            <meta name="csrf-token-name" content="{{ craft.app.config.general.csrfTokenName }}"/>
+            <meta name="csrf-token" content="{{ craft.app.request.csrfToken }}" />
+
+            <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+            <meta name="referrer" content="origin-when-cross-origin" />
+
+            {# Favicon #}
+            {# {% set icon = '/img/favicon.png' %}
+            {% set sizesIcon = [192, 48, 32, 16] %}
+            {% set sizesAppleTouch = [180] %}
+            {% for faviconSize in sizesIcon %}
+                {{tag('link', {
+                    rel: 'icon',
+                    sizes: faviconSize~'x'~faviconSize,
+                    type: 'image/png',
+                    href: craft.vite.asset(icon, true),
+                }) }}
+            {% endfor %}
+            {% for faviconSize in sizesAppleTouch %}
+                {{tag('link', {
+                    rel: 'apple-touch-icon',
+                    sizes: faviconSize~'x'~faviconSize,
+                    href: craft.vite.asset(icon, true)
+                }) }}
+            {% endfor %} #}
+        </head>
+
+    <body class="antialiased" style="--theme-color-slug: {{ site.siteColor }};">
+        {# Header #}
+        {% include "components/layout/_header" %}
+
+        {# Main content #}
+        <main class="main" id="mainContent ">
+            {% block content %}
+            {% endblock %}
+        </main>
+
+        {# Footer #}
+        {# {% include "components/layout/_footer" %} #}
+    </body>
+</html>

@@ -1,0 +1,25 @@
+{% import 'macros/_utils' as utils %}
+
+<div class="w-full flex items-center justify-between">
+
+    <div class="w-1/2 p-4">
+        <h2>{{ chunk.entry.title }}</h2>
+        {{ chunk.entry.text }}
+
+        {% if chunk.entry.cta|length %}
+            <div class="mt-4 flex items-center gap-2">
+                {% for cta in chunk.entry.cta %}
+                    <a {{ cta.linkField.getLinkAttributes() }} class="bg-green-100 py-4 px-5 text-black">{{ cta.linkField.getCustomText() }}</a>
+                {% endfor %}
+            </div>
+        {% endif %}
+
+    </div>
+
+    <div class="w-1/2">
+        {{ utils.image(chunk.entry.image.one(), 'w-full h-full object-cover pointer-events-none', 500, 500, 500, 500) }}
+    </div>
+
+    
+    {# <p>{{ chunk.entry.image.one().getUrl() }}</p> #}
+</div>
