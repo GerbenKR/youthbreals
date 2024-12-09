@@ -1,10 +1,11 @@
-dateModified: 1733751773
+dateModified: 1733752140
 elementSources:
   craft\elements\Entry:
     -
       defaultSort:
         - postDate
         - desc
+      defaultViewMode: ''
       disabled: false
       key: '*'
       tableAttributes:
@@ -15,7 +16,7 @@ elementSources:
         - link
       type: native
     -
-      heading: Eenmalig
+      heading: Home
       type: heading
     -
       defaultSort:
@@ -30,7 +31,7 @@ elementSources:
         - link
       type: native
     -
-      heading: Structuren
+      heading: content
       type: heading
     -
       defaultSort:
@@ -38,6 +39,51 @@ elementSources:
         - asc
       disabled: false
       key: 'section:a8e27dbb-40ec-4978-b8f0-f850e150d88e' # Content page
+      tableAttributes:
+        - status
+        - postDate
+        - expiryDate
+        - link
+      type: native
+    -
+      heading: Blog
+      type: heading
+    -
+      defaultSort:
+        - id
+        - asc
+      defaultViewMode: ''
+      disabled: false
+      key: 'single:3823ab72-9340-4bc1-b2a2-6f1636f2a823' # Blog overview
+      tableAttributes:
+        - status
+        - postDate
+        - expiryDate
+        - link
+      type: native
+    -
+      defaultSort:
+        - postDate
+        - desc
+      defaultViewMode: ''
+      disabled: false
+      key: 'section:cf812ba9-66c0-45ff-a29b-d90997bf2f43' # Blog
+      tableAttributes:
+        - status
+        - postDate
+        - expiryDate
+        - link
+      type: native
+    -
+      heading: Overig
+      type: heading
+    -
+      defaultSort:
+        - structure
+        - asc
+      defaultViewMode: ''
+      disabled: false
+      key: 'section:b079f368-871a-4c20-9fa2-b69dce13d7ce' # Navigation
       tableAttributes:
         - status
         - postDate

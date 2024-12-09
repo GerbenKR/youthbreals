@@ -34,7 +34,17 @@ siteSettings:
     hasUrls: true
     template: pages/home/_index
     uriFormat: __home__
+  ab7b1962-e0cf-44f5-a096-7aec91ca594f: # YouthBreaks NL - Mallorca
+    enabledByDefault: true
+    hasUrls: true
+    template: pages/home/_index
+    uriFormat: __home__
   c58ce353-a590-49b2-93a4-f2abd4f104f3: # YouthBreaks NL - Lloret de Mar
+    enabledByDefault: true
+    hasUrls: true
+    template: pages/home/_index
+    uriFormat: __home__
+  df6abb26-4ba5-4637-9534-1d06011bf708: # YouthBreaks NL - Chersonissos
     enabledByDefault: true
     hasUrls: true
     template: pages/home/_index
