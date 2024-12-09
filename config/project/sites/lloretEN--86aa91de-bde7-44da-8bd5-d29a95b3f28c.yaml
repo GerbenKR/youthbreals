@@ -1,9 +1,0 @@
-baseUrl: $LLORET_EN
-enabled: '1'
-handle: lloretEN
-hasUrls: true
-language: en
-name: 'YouthBreaks EN - Lloret de mar'
-primary: false
-siteGroup: 616e4fd4-0f3f-428b-96b5-3ae84ffb392d # YouthBreaks EN
-sortOrder: 6

@@ -1,0 +1,9 @@
+baseUrl: $MALLORCA_NL
+enabled: '1'
+handle: mallorcaNL
+hasUrls: true
+language: nl-NL
+name: 'YouthBreaks NL - Mallorca'
+primary: false
+siteGroup: f2b78056-d43b-4b41-93dc-57fef1d1975d # YouthBreaks NL
+sortOrder: 5

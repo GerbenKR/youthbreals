@@ -1,4 +1,4 @@
-dateModified: 1733749468
+dateModified: 1733751773
 elementSources:
   craft\elements\Entry:
     -
@@ -90,7 +90,6 @@ meta:
     15bfb93a-1737-4d9e-9fc0-977b5f2e3805: Site # Site
     25dd143b-c54a-4d69-920b-dcf549daf145: 'Page | Blog overview' # Page | Blog overview
     61af5648-4e25-4452-b3d6-9b822c0b4489: 'Tailwind Color' # Tailwind Color
-    86aa91de-bde7-44da-8bd5-d29a95b3f28c: 'YouthBreaks EN - Lloret de mar' # YouthBreaks EN - Lloret de mar
     138df22e-99cf-4a20-93ae-2f05fd455aef: 'Matrix | Blog cards' # Matrix | Blog cards
     306f4436-3d40-48fd-9265-1f7daaa5fa05: 'Page body' # Page body
     616e4fd4-0f3f-428b-96b5-3ae84ffb392d: 'YouthBreaks EN' # YouthBreaks EN
@@ -105,8 +104,8 @@ meta:
     28386272-18fb-49fe-a577-621f6e30eab0: 'Hero title' # Hero title
     55585797-ba95-46c1-bb84-fd409985700f: 'Site theme' # Site theme
     79372943-5d5e-4ce9-8fca-001ceaeda8d5: Description # Description
-    81132275-2a11-4ee2-b595-4ed825b4d827: 'YouthBreaks EN - albufeira' # YouthBreaks EN - albufeira
     a8e27dbb-40ec-4978-b8f0-f850e150d88e: 'Content page' # Content page
+    ab7b1962-e0cf-44f5-a096-7aec91ca594f: 'YouthBreaks NL - Mallorca' # YouthBreaks NL - Mallorca
     b079f368-871a-4c20-9fa2-b69dce13d7ce: Navigation # Navigation
     b5986cbe-32ff-44d7-a869-f9e164c3a385: Entries # Entries
     b9723ca6-1d73-46e2-a144-756cd3e36e11: Navigation # Navigation
@@ -118,6 +117,7 @@ meta:
     d2cae82f-ab32-40f8-96e4-971e21d04bcc: 'Matrix | Cards Entries' # Matrix | Cards Entries
     d3cf3f36-3d63-4ce1-976b-b3bdaf15c5b1: 'Page description' # Page description
     dd682aa7-0a0c-411b-bf86-5a33528acd7b: Local # Local
+    df6abb26-4ba5-4637-9534-1d06011bf708: 'YouthBreaks NL - Chersonissos' # YouthBreaks NL - Chersonissos
     e4d3d6ad-aef0-4a56-80e1-b2e942135a5a: Source # Source
     e39f4ef5-8dec-40fe-83ef-107c617981bc: 'Page title' # Page title
     e529eacf-7c43-4b0d-b7a8-124fee4d34de: CTA # CTA
