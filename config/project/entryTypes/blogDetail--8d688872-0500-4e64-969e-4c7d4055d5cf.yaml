@@ -193,7 +193,7 @@ fieldLayouts:
 handle: blogDetail
 hasTitleField: true
 icon: ''
-name: 'Blog detail'
+name: 'Page | Blog detail'
 showSlugField: true
 showStatusField: true
 slugTranslationKeyFormat: ''

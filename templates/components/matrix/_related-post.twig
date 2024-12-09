@@ -1,0 +1,12 @@
+{% import 'macros/_utils' as utils %}
+
+<a href="{{ chunk.entry.relatedEntry.one().url }}" class="mb-8 group p-4 bg-yellow-200 rounded-md flex items-center gap-4">
+    <div class="aspect-square w-[70px] rounded-md overflow-hidden">
+        {{ utils.image(chunk.entry.relatedEntry.one().pageImage.one(), 'w-full h-full object-cover pointer-events-none group-hover:scale-105 duration-200 ease-in-out', 70, 70, 70, 70) }}
+    </div>
+
+    <div>
+        <span class="mb-1">Zie ook:</span>
+        <div class="h4 group-hover:underline">{{ chunk.entry.relatedEntry.one().title  }}</div>
+    </div>
+</a>

@@ -1,4 +1,4 @@
-dateModified: 1733752140
+dateModified: 1733770820
 elementSources:
   craft\elements\Entry:
     -
@@ -123,6 +123,7 @@ meta:
     0c806500-1776-487d-9169-5c11d46ea615: 'Matrix | Text + Image' # Matrix | Text + Image
     1ac1c857-31dd-42a4-89fa-400ff951b829: 'Content page' # Content page
     1fa00b89-1304-4bcc-b401-99ad445d9241: 'YouthBreaks EN' # YouthBreaks EN
+    3ab17238-f0e4-4956-926a-fdd94ceb7837: 'Related entry' # Related entry
     3d4370d8-2bc1-4dd4-b518-30aaacc5b408: 'Navigation link' # Navigation link
     4c8a2273-4983-45d3-8852-6ae588a5dcf0: 'Site name' # Site name
     4f4672b8-b625-45df-92a9-c398d1d4cd63: 'Hero description' # Hero description
@@ -131,7 +132,7 @@ meta:
     7d26659a-16fd-4fbd-b167-a8a5e832265f: Home # Home
     7ed5075f-76f4-4d1f-bc63-24574242960c: SEO # SEO
     7f489f6a-a1cd-4973-8f9f-3ac6ede0bfad: 'Matrix | Title + Text' # Matrix | Title + Text
-    8d688872-0500-4e64-969e-4c7d4055d5cf: 'Blog detail' # Blog detail
+    8d688872-0500-4e64-969e-4c7d4055d5cf: 'Page | Blog detail' # Page | Blog detail
     9c0fe570-11a0-4087-9cc4-b3f4dae01ea6: Matrix # Matrix
     15bfb93a-1737-4d9e-9fc0-977b5f2e3805: Site # Site
     25dd143b-c54a-4d69-920b-dcf549daf145: 'Page | Blog overview' # Page | Blog overview
@@ -162,6 +163,7 @@ meta:
     cf812ba9-66c0-45ff-a29b-d90997bf2f43: Blog # Blog
     d2cae82f-ab32-40f8-96e4-971e21d04bcc: 'Matrix | Cards Entries' # Matrix | Cards Entries
     d3cf3f36-3d63-4ce1-976b-b3bdaf15c5b1: 'Page description' # Page description
+    d32f4aed-b7aa-4c12-92f0-d34ad7ae3401: 'Matrix | Related post' # Matrix | Related post
     dd682aa7-0a0c-411b-bf86-5a33528acd7b: Local # Local
     df6abb26-4ba5-4637-9534-1d06011bf708: 'YouthBreaks NL - Chersonissos' # YouthBreaks NL - Chersonissos
     e4d3d6ad-aef0-4a56-80e1-b2e942135a5a: Source # Source

@@ -15,6 +15,7 @@ settings:
     - 154402bc-4e13-4443-a177-5a7bc2b016b2 # Matrix | Image
     - d2cae82f-ab32-40f8-96e4-971e21d04bcc # Matrix | Cards Entries
     - 138df22e-99cf-4a20-93ae-2f05fd455aef # Matrix | Blog cards
+    - d32f4aed-b7aa-4c12-92f0-d34ad7ae3401 # Matrix | Related post
   purifierConfig: null
   purifyHtml: true
   showUnpermittedFiles: false
