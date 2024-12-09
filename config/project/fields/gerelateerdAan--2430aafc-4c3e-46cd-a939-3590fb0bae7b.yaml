@@ -1,0 +1,55 @@
+columnSuffix: null
+handle: gerelateerdAan
+instructions: 'Geen keuze is algemeen'
+name: 'Gerelateerd aan'
+searchable: false
+settings:
+  customOptions: false
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - Albufeira
+        -
+          - value
+          - albufeira
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - 'Lloret de Mar'
+        -
+          - value
+          - lloret-de-mar
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Chersonissos
+        -
+          - value
+          - chersonissos
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Mallorca
+        -
+          - value
+          - mallorca
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Dropdown

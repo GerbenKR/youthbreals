@@ -1,0 +1,34 @@
+
+{% set title = title|default(null) %}
+{% set description = description|default(null) %}
+{% set showFrom = showFrom|default(null) %}
+
+{% set blogs = [] %}
+
+{% if showFrom == null %}
+    {% set blogs = craft.entries.section('blog').all() %}
+{% else %}
+    {% set blogs = craft.entries.section('blog')
+        .site("defaultNL")
+        .gerelateerdAan(showFrom.value)
+        .all() %}
+{% endif %}
+
+<section>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div>
+            <h2 class="mb-2 font-semibold text-2xl">{{title}}</h2>
+            {{description|raw}}
+        </div>
+
+        {% for blog in blogs %}
+            <a href="{{blog.url}}">
+                {% include "components/cards/_square-card" with {
+                    title: blog.title,
+                    image: blog.heroImage.one() ?? null,
+                    date: blog.postDate|date("j M, Y")|lower
+                } %}
+            </a>
+        {% endfor %}
+    </div>
+</section>

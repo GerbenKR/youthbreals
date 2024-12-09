@@ -1,4 +1,4 @@
-dateModified: 1733585861
+dateModified: 1733749468
 elementSources:
   craft\elements\Entry:
     -
@@ -88,18 +88,23 @@ meta:
     8d688872-0500-4e64-969e-4c7d4055d5cf: 'Blog detail' # Blog detail
     9c0fe570-11a0-4087-9cc4-b3f4dae01ea6: Matrix # Matrix
     15bfb93a-1737-4d9e-9fc0-977b5f2e3805: Site # Site
+    25dd143b-c54a-4d69-920b-dcf549daf145: 'Page | Blog overview' # Page | Blog overview
     61af5648-4e25-4452-b3d6-9b822c0b4489: 'Tailwind Color' # Tailwind Color
     86aa91de-bde7-44da-8bd5-d29a95b3f28c: 'YouthBreaks EN - Lloret de mar' # YouthBreaks EN - Lloret de mar
+    138df22e-99cf-4a20-93ae-2f05fd455aef: 'Matrix | Blog cards' # Matrix | Blog cards
     306f4436-3d40-48fd-9265-1f7daaa5fa05: 'Page body' # Page body
     616e4fd4-0f3f-428b-96b5-3ae84ffb392d: 'YouthBreaks EN' # YouthBreaks EN
     672ff7e5-1a72-4fc4-a1d4-a97441e26779: text # text
     1643ba74-6496-465b-8193-45ec88e23cd7: 'YouthBreaks NL - Albufeira' # YouthBreaks NL - Albufeira
+    2430aafc-4c3e-46cd-a939-3590fb0bae7b: 'Gerelateerd aan' # Gerelateerd aan
+    3823ab72-9340-4bc1-b2a2-6f1636f2a823: 'Blog overview' # Blog overview
     4510a52c-d2a5-480a-9139-61207c1c0b48: Image # Image
     7863f077-25df-46a0-919f-e5ff5e3a8142: 'Image description' # Image description
     9620f8bc-de2f-4a52-ac63-94cba3bed665: YouthBreaks # YouthBreaks
     154402bc-4e13-4443-a177-5a7bc2b016b2: 'Matrix | Image' # Matrix | Image
     28386272-18fb-49fe-a577-621f6e30eab0: 'Hero title' # Hero title
     55585797-ba95-46c1-bb84-fd409985700f: 'Site theme' # Site theme
+    79372943-5d5e-4ce9-8fca-001ceaeda8d5: Description # Description
     81132275-2a11-4ee2-b595-4ed825b4d827: 'YouthBreaks EN - albufeira' # YouthBreaks EN - albufeira
     a8e27dbb-40ec-4978-b8f0-f850e150d88e: 'Content page' # Content page
     b079f368-871a-4c20-9fa2-b69dce13d7ce: Navigation # Navigation

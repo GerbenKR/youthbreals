@@ -1,12 +1,20 @@
 {% for chunk in entry.matrix %}
     {% if chunk.type == 'markup' %}
-        {{ chunk }}
+        <div class="text-container">
+            {{ chunk }}
+        </div>
     {% else %}
         {% switch chunk.entry.type.handle %}
             {% case 'matrixImage' %}
                 {% include "components/matrix/_image" %}
             {% case 'matrixTextImage' %}
                 {% include "components/matrix/_textImage" %}
+            {% case 'matrixBlogCards' %}
+                {% include "components/matrix/_blog-cards" with {
+                    title: chunk.entry.title,
+                    description: chunk.entry.description,
+                    showFrom: chunk.entry.showFrom
+                } %}
         {% endswitch %}
     {% endif %}
 {% endfor %}

@@ -1,0 +1,83 @@
+color: null
+fieldLayouts:
+  2cd84f42-04db-40af-8df2-2f614a265df1:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2024-12-09T10:11:42+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            required: true
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 6dc2fc32-a37d-424a-8520-d2a1605b9ae7
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-12-09T10:13:38+00:00'
+            elementCondition: null
+            fieldUid: 79372943-5d5e-4ce9-8fca-001ceaeda8d5 # Description
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: bbe4ec4c-3837-4d79-b8cf-e7e6a38eb06a
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-12-09T10:23:27+00:00'
+            elementCondition: null
+            fieldUid: 2430aafc-4c3e-46cd-a939-3590fb0bae7b # Gerelateerd aan
+            handle: showFrom
+            includeInCards: false
+            instructions: 'Geen keuze is alle blogs'
+            label: 'Show from'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 41396c1f-9b79-42aa-a2c9-60dcf867186d
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhoud
+        uid: b3ae4ebc-0b9b-4906-8452-803cede4fbca
+        userCondition: null
+handle: matrixBlogCards
+hasTitleField: true
+icon: ''
+name: 'Matrix | Blog cards'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: ''
+slugTranslationMethod: site
+titleFormat: ''
+titleTranslationKeyFormat: ''
+titleTranslationMethod: site
