@@ -1,6 +1,6 @@
 color: null
 fieldLayouts:
-  8d4c7b07-0872-460a-b9a5-24e86f0532a6:
+  c950c5e4-9221-41a0-99c4-7aea5640e849:
     tabs:
       -
         elementCondition: null
@@ -10,7 +10,7 @@ fieldLayouts:
             autocomplete: false
             autocorrect: true
             class: null
-            dateAdded: '2024-12-16T09:35:41+00:00'
+            dateAdded: '2024-12-16T11:32:08+00:00'
             disabled: false
             elementCondition: null
             id: null
@@ -31,12 +31,12 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: 7ebdfe41-7086-4b6d-8733-a80e9a1e3bb4
+            uid: 6f4da3ac-bbdb-4276-b28f-fca213ec608d
             userCondition: null
             warning: null
             width: 100
           -
-            dateAdded: '2024-12-16T09:47:28+00:00'
+            dateAdded: '2024-12-16T11:33:53+00:00'
             elementCondition: null
             fieldUid: 79372943-5d5e-4ce9-8fca-001ceaeda8d5 # Description
             handle: null
@@ -47,14 +47,14 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 91829a4f-9469-4946-81ef-4fcf762aeb6d
+            uid: 33403487-67d9-41ea-98d1-d402c508aea8
             userCondition: null
             warning: null
             width: 100
           -
-            dateAdded: '2024-12-16T09:41:03+00:00'
+            dateAdded: '2024-12-16T11:33:53+00:00'
             elementCondition: null
-            fieldUid: e4183bb3-fc84-4eee-b49f-dae1a173e0d9 # Cards
+            fieldUid: 3c7ea62a-0e10-4dca-889c-eb4f178473d6 # Entry
             handle: null
             includeInCards: false
             instructions: null
@@ -63,34 +63,18 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: d76c17c6-4eca-49ec-84d3-0e7845028cdb
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            dateAdded: '2024-12-16T09:35:41+00:00'
-            elementCondition: null
-            fieldUid: b5986cbe-32ff-44d7-a869-f9e164c3a385 # Relation entries
-            handle: null
-            includeInCards: false
-            instructions: null
-            label: null
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 6e2312db-020e-4439-99d7-dd1f4375355b
+            uid: ec434b4c-4ebb-4321-a0ba-5482fbe51ebb
             userCondition: null
             warning: null
             width: 100
         name: Inhoud
-        uid: 07a82194-979e-4059-8bde-5cbfeacabce5
+        uid: 9b57d257-6e07-4cb4-9f12-c2f8a323cc37
         userCondition: null
-handle: matrixSquareCards
+handle: infoCard
 hasTitleField: true
 icon: ''
-name: 'Matrix | Square cards'
-showSlugField: false
+name: 'Info card'
+showSlugField: true
 showStatusField: true
 slugTranslationKeyFormat: ''
 slugTranslationMethod: site

@@ -1,0 +1,39 @@
+
+{% set title = title|default(null) %}
+{% set description = description|default(null) %}
+{% set squareCards = squareCards|default(null) %}
+{% set infoCards = infoCards|default(null) %}
+
+<section>
+    {% if squareCards and squareCards|length %}
+        <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 !m-0 !p-0">
+                {% for card in squareCards %}
+                    <li class="list-none">
+                        <a href="{{ card.entry.one().url }}">
+                            {% include "components/cards/_square-card" with {
+                                title: card.title|default(card.entry.one().title)|default(null),
+                                subtitle: card.subtitle|default(null),
+                                image: card.entry.pageImage.one()|default(null),
+                            } %}
+                        </a>
+                    </li>
+                {% endfor %}
+        </ul>
+    {% endif %}
+
+    {% if infoCards and infoCards|length %}
+        <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 !m-0 !p-0">
+                {% for card in infoCards %}
+                    <li class="list-none">
+                        <a href="{{ card.entry.one().url }}">
+                            {% include "components/cards/_info-card" with {
+                                title: card.title|default(card.entry.one().title)|default(null),
+                                description: card.description|default(card.entry.one().heroDescription)|default(null),
+                                image: card.entry.pageImage.one()|default(null),
+                            } %}
+                        </a>
+                    </li>
+                {% endfor %}
+        </ul>
+    {% endif %}
+</section>

@@ -1,4 +1,4 @@
-dateModified: 1734348380
+dateModified: 1734348844
 elementSources:
   craft\elements\Entry:
     -
@@ -137,8 +137,10 @@ meta:
     15bfb93a-1737-4d9e-9fc0-977b5f2e3805: Site # Site
     25dd143b-c54a-4d69-920b-dcf549daf145: 'Page | Blog overview' # Page | Blog overview
     61af5648-4e25-4452-b3d6-9b822c0b4489: 'Tailwind Color' # Tailwind Color
+    66c3e5d1-0a34-40db-b67a-6794ee6defb5: 'Info cards' # Info cards
     71ea925b-34f0-4b0e-9d7e-f0f16840f2cf: 'Square card' # Square card
     138df22e-99cf-4a20-93ae-2f05fd455aef: 'Matrix | Blog cards' # Matrix | Blog cards
+    190ed61d-ffbd-480b-ad5f-0b1e2b935b0a: 'Info card' # Info card
     306f4436-3d40-48fd-9265-1f7daaa5fa05: 'Page body' # Page body
     616e4fd4-0f3f-428b-96b5-3ae84ffb392d: 'YouthBreaks EN' # YouthBreaks EN
     672ff7e5-1a72-4fc4-a1d4-a97441e26779: text # text
@@ -162,7 +164,7 @@ meta:
     c0b15c5d-7161-40ce-82ae-d90d4efe91c0: Simple # Simple
     c58ce353-a590-49b2-93a4-f2abd4f104f3: 'YouthBreaks NL - Lloret de Mar' # YouthBreaks NL - Lloret de Mar
     cf812ba9-66c0-45ff-a29b-d90997bf2f43: Blog # Blog
-    d2cae82f-ab32-40f8-96e4-971e21d04bcc: 'Matrix | Square cards' # Matrix | Square cards
+    d2cae82f-ab32-40f8-96e4-971e21d04bcc: 'Matrix | Cards' # Matrix | Cards
     d3cf3f36-3d63-4ce1-976b-b3bdaf15c5b1: 'Page description' # Page description
     d32f4aed-b7aa-4c12-92f0-d34ad7ae3401: 'Matrix | Related post' # Matrix | Related post
     dd682aa7-0a0c-411b-bf86-5a33528acd7b: Local # Local
@@ -170,7 +172,7 @@ meta:
     e4d3d6ad-aef0-4a56-80e1-b2e942135a5a: Source # Source
     e39f4ef5-8dec-40fe-83ef-107c617981bc: 'Page title' # Page title
     e529eacf-7c43-4b0d-b7a8-124fee4d34de: CTA # CTA
-    e4183bb3-fc84-4eee-b49f-dae1a173e0d9: Cards # Cards
+    e4183bb3-fc84-4eee-b49f-dae1a173e0d9: 'Square cards' # Square cards
     f0af8fb8-1d45-4e49-9ca1-c62742f5df23: 'Public Schema' # Public Schema
     f095b797-97b3-4a81-bb94-e9cd40fe3b4d: 'Link field' # Link field
     f2b78056-d43b-4b41-93dc-57fef1d1975d: 'YouthBreaks NL' # YouthBreaks NL

@@ -1,7 +1,7 @@
 columnSuffix: null
-handle: cards
+handle: squareCards
 instructions: null
-name: Cards
+name: 'Square cards'
 searchable: false
 settings:
   createButtonLabel: null
