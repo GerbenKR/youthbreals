@@ -4,7 +4,7 @@
 {% set squareCards = squareCards|default(null) %}
 {% set infoCards = infoCards|default(null) %}
 
-<section>
+<section class="my-3">
     {% if squareCards and squareCards|length %}
         <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 !m-0 !p-0">
                 {% for card in squareCards %}
