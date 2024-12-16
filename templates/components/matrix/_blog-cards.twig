@@ -23,7 +23,7 @@
 
         {% for blog in blogs %}
             <a href="{{blog.url}}">
-                {% include "components/cards/_square-card" with {
+                {% include "components/cards/_blog-card" with {
                     title: blog.title,
                     image: blog.heroImage.one() ?? null,
                     date: blog.postDate|date("j M, Y")|lower
