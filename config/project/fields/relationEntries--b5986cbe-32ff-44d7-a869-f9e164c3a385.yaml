@@ -1,0 +1,23 @@
+columnSuffix: null
+handle: relationEntries
+instructions: null
+name: 'Relation entries'
+searchable: false
+settings:
+  allowSelfRelations: false
+  branchLimit: null
+  maintainHierarchy: false
+  maxRelations: null
+  minRelations: 0
+  selectionLabel: null
+  showCardsInGrid: true
+  showSiteMenu: false
+  sources:
+    - 'section:a8e27dbb-40ec-4978-b8f0-f850e150d88e' # Content page
+    - 'single:fcf1ca76-1f7b-4ad5-b408-3efc786f7fc0' # Home
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: cards
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Entries

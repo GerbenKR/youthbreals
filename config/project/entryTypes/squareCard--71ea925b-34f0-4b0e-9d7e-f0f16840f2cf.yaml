@@ -1,6 +1,6 @@
 color: null
 fieldLayouts:
-  8d4c7b07-0872-460a-b9a5-24e86f0532a6:
+  ae541704-a1f2-4576-8bff-fa8a288c6e61:
     tabs:
       -
         elementCondition: null
@@ -10,12 +10,13 @@ fieldLayouts:
             autocomplete: false
             autocorrect: true
             class: null
+            dateAdded: '2024-12-16T09:36:44+00:00'
             disabled: false
             elementCondition: null
             id: null
             includeInCards: false
             inputType: null
-            instructions: null
+            instructions: 'Overschrijft de relatie title'
             label: null
             max: null
             min: null
@@ -24,54 +25,56 @@ fieldLayouts:
             placeholder: null
             providesThumbs: false
             readonly: false
-            requirable: false
+            required: false
             size: null
             step: null
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: 7ebdfe41-7086-4b6d-8733-a80e9a1e3bb4
+            uid: 15f84ee6-60a9-4c83-b053-40a2911eb110
             userCondition: null
             warning: null
             width: 100
           -
+            dateAdded: '2024-12-16T09:40:28+00:00'
             elementCondition: null
-            fieldUid: 672ff7e5-1a72-4fc4-a1d4-a97441e26779 # text
+            fieldUid: b9277aaa-c0ce-4c6d-85fd-59961c503c7d # Subtitle
             handle: null
-            includeInCards: false
+            includeInCards: true
             instructions: null
             label: null
             providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: e3608172-a270-4b4a-adc6-371f215de98e
+            uid: f7cb9e65-f09c-4300-9cad-e8873de7f88e
             userCondition: null
             warning: null
             width: 100
           -
+            dateAdded: '2024-12-16T09:40:28+00:00'
             elementCondition: null
-            fieldUid: b5986cbe-32ff-44d7-a869-f9e164c3a385 # Entries
+            fieldUid: 3c7ea62a-0e10-4dca-889c-eb4f178473d6 # Entry
             handle: null
-            includeInCards: false
-            instructions: null
+            includeInCards: true
+            instructions: 'Wordt gebruikt voor het ophalen van de zichtbare gegevens en de URL, kan worden overschreven door het veld Title en Subtitle te gebruiken.'
             label: null
             providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 6e2312db-020e-4439-99d7-dd1f4375355b
+            uid: 100d7392-debe-423c-9124-031d468ef5a7
             userCondition: null
             warning: null
             width: 100
         name: Inhoud
-        uid: 07a82194-979e-4059-8bde-5cbfeacabce5
+        uid: 037155ef-f71e-4804-99b4-214e8e53b33f
         userCondition: null
-handle: matrixCardsEntries
+handle: squareCard
 hasTitleField: true
-icon: gem
-name: 'Matrix | Cards Entries'
-showSlugField: false
+icon: ''
+name: 'Square card'
+showSlugField: true
 showStatusField: true
 slugTranslationKeyFormat: ''
 slugTranslationMethod: site

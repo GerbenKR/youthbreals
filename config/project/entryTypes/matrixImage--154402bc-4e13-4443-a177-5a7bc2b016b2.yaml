@@ -10,6 +10,7 @@ fieldLayouts:
             autocomplete: false
             autocorrect: true
             class: null
+            dateAdded: '2024-12-16T11:24:09+00:00'
             disabled: false
             elementCondition: null
             id: null
@@ -24,7 +25,7 @@ fieldLayouts:
             placeholder: null
             providesThumbs: false
             readonly: false
-            requirable: false
+            required: true
             size: null
             step: null
             tip: null
@@ -35,6 +36,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: '2024-12-16T11:24:09+00:00'
             elementCondition: null
             fieldUid: 4510a52c-d2a5-480a-9139-61207c1c0b48 # Image
             handle: null
@@ -50,6 +52,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: '2024-12-16T11:24:09+00:00'
             elementCondition: null
             fieldUid: 7863f077-25df-46a0-919f-e5ff5e3a8142 # Image description
             handle: null
@@ -69,7 +72,7 @@ fieldLayouts:
         userCondition: null
 handle: matrixImage
 hasTitleField: true
-icon: image
+icon: ''
 name: 'Matrix | Image'
 showSlugField: false
 showStatusField: false

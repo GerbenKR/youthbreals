@@ -3,7 +3,13 @@
 {% block content %}
     {% include "components/hero/_content" %}
 
-    <article class="container max-w-[1200px] py-10">
+    <article class="container max-w-[1200px]">
         {% include "components/matrix/_matrix" %}
     </article>
+
+    {# <div class="container grid grid-cols-1 lg:grid-cols-12 gap-4">
+        <article class="col-span-8 text-container">
+            {% include "components/matrix/_matrix" %}
+        </article>
+    </div> #}
 {% endblock content %}

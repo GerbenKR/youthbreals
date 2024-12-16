@@ -15,6 +15,13 @@
                     description: chunk.entry.description,
                     showFrom: chunk.entry.showFrom
                 } %}
+            {% case 'matrixSquareCards' %}
+                {% include "components/matrix/_square-cards" with {
+                    title: chunk.entry.title,
+                    description: chunk.entry.description,
+                    cards: chunk.entry.cards,
+                    relationEntries: chunk.entry.relationEntries
+                } %}
             {% case 'matrixRelatedPost' %}
                 {% include "components/matrix/_related-post" %}
         {% endswitch %}

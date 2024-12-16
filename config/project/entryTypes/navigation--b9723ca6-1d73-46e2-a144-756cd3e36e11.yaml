@@ -10,6 +10,7 @@ fieldLayouts:
             autocomplete: false
             autocorrect: true
             class: null
+            dateAdded: '2024-12-16T11:24:13+00:00'
             disabled: false
             elementCondition: null
             id: null
@@ -24,7 +25,7 @@ fieldLayouts:
             placeholder: null
             providesThumbs: false
             readonly: false
-            requirable: false
+            required: true
             size: null
             step: null
             tip: null
@@ -35,6 +36,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: '2024-12-16T11:24:13+00:00'
             elementCondition: null
             fieldUid: 3d4370d8-2bc1-4dd4-b518-30aaacc5b408 # Navigation link
             handle: null
@@ -54,7 +56,7 @@ fieldLayouts:
         userCondition: null
 handle: navigation
 hasTitleField: true
-icon: list-tree
+icon: ''
 name: Navigation
 showSlugField: false
 showStatusField: true
