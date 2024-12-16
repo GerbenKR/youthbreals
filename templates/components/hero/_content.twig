@@ -1,7 +1,7 @@
 {% import 'macros/_utils' as utils %}
 
 <section class="relative w-full min-h-[350px] h-[250px] flex flex-col items-center justify-center bg-cover bg-center">
-    {{ utils.image(entry.heroImage.one(), 'w-full h-full object-cover pointer-events-none', 1885, 350, 665, 250) }}
+    {{ utils.image(entry.heroImage.one(), 'w-full h-full object-cover pointer-events-none', 1885, 350, 665, 250, false, "high", "", 100, "fit") }}
 
     <div class="absolute top-0 left-0 w-full h-full flex items-center justify-center flex-col text-center">
         <h1 class="text-3xl font-semibold text-white text-shadow">{{ entry.heroTitle }}</h1>
