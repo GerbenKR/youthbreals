@@ -1,4 +1,4 @@
-dateModified: 1734353201
+dateModified: 1734383514
 elementSources:
   craft\elements\Entry:
     -
@@ -190,10 +190,12 @@ meta:
     3ab17238-f0e4-4956-926a-fdd94ceb7837: 'Related entry' # Related entry
     3c7ea62a-0e10-4dca-889c-eb4f178473d6: Entry # Entry
     3d4370d8-2bc1-4dd4-b518-30aaacc5b408: 'Navigation link' # Navigation link
+    3eb67174-4588-4c3b-9b2d-2dcd5e59bcdb: 'Uitgaan detail' # Uitgaan detail
     3fd8d14a-df11-405b-b083-25dcf44c327c: 'R2 Chersonissos' # R2 Chersonissos
     4c8a2273-4983-45d3-8852-6ae588a5dcf0: 'Site name' # Site name
     4f4672b8-b625-45df-92a9-c398d1d4cd63: 'Hero description' # Hero description
     6c70dec0-60bb-41ba-8577-35f5b06b9e13: 'Site color' # Site color
+    06efb1e7-f5d8-4694-8151-7783e392018e: 'Ticket URL' # Ticket URL
     6f4df8bc-cbb1-45fa-832f-7083c97bf063: CTA # CTA
     7d26659a-16fd-4fbd-b167-a8a5e832265f: Home # Home
     7ed5075f-76f4-4d1f-bc63-24574242960c: SEO # SEO
@@ -218,22 +220,28 @@ meta:
     9620f8bc-de2f-4a52-ac63-94cba3bed665: YouthBreaks # YouthBreaks
     154402bc-4e13-4443-a177-5a7bc2b016b2: 'Matrix | Image' # Matrix | Image
     28386272-18fb-49fe-a577-621f6e30eab0: 'Hero title' # Hero title
+    63293651-1dad-45a2-a40a-3a8e3a5bcf7a: 'Club settings' # Club settings
     79372943-5d5e-4ce9-8fca-001ceaeda8d5: Description # Description
     a8e27dbb-40ec-4978-b8f0-f850e150d88e: 'Content page' # Content page
+    a3596374-3136-4033-b665-3ef233eff6b7: 'Club settings' # Club settings
     ab7b1962-e0cf-44f5-a096-7aec91ca594f: 'YouthBreaks NL - Mallorca' # YouthBreaks NL - Mallorca
     b079f368-871a-4c20-9fa2-b69dce13d7ce: Navigation # Navigation
     b1dc1c79-b214-4f87-bfc2-a9ddb73168a2: 'R2 Lloret de Mar' # R2 Lloret de Mar
+    b1e8fa5f-153d-4197-8844-04f0a3fcef9e: 'Club detail' # Club detail
     b5986cbe-32ff-44d7-a869-f9e164c3a385: 'Relation entries' # Relation entries
     b9277aaa-c0ce-4c6d-85fd-59961c503c7d: Subtitle # Subtitle
     b9723ca6-1d73-46e2-a144-756cd3e36e11: Navigation # Navigation
     b11847cc-da8d-47c7-bba3-200d6e853d6e: 'Hero image' # Hero image
     bc0428b0-cc69-43d9-85c4-85b3719f296a: 'Image position' # Image position
     c0b15c5d-7161-40ce-82ae-d90d4efe91c0: Simple # Simple
+    c16c87e7-aa54-415e-b8b4-a8d626d68b18: Adress # Adress
     c58ce353-a590-49b2-93a4-f2abd4f104f3: 'YouthBreaks NL - Lloret de Mar' # YouthBreaks NL - Lloret de Mar
+    cf788f76-ff1e-44e5-a8a6-e68675ee1250: 'Club images' # Club images
     cf812ba9-66c0-45ff-a29b-d90997bf2f43: Blog # Blog
     d2cae82f-ab32-40f8-96e4-971e21d04bcc: 'Matrix | Cards' # Matrix | Cards
     d3cf3f36-3d63-4ce1-976b-b3bdaf15c5b1: 'Page description' # Page description
     d32f4aed-b7aa-4c12-92f0-d34ad7ae3401: 'Matrix | Related post' # Matrix | Related post
+    d71aabb4-dc67-4f3d-9ef7-b9155c511cba: 'Website URL' # Website URL
     dd682aa7-0a0c-411b-bf86-5a33528acd7b: Local # Local
     df6abb26-4ba5-4637-9534-1d06011bf708: 'YouthBreaks NL - Chersonissos' # YouthBreaks NL - Chersonissos
     e4d3d6ad-aef0-4a56-80e1-b2e942135a5a: Source # Source
@@ -243,6 +251,7 @@ meta:
     f0af8fb8-1d45-4e49-9ca1-c62742f5df23: 'Public Schema' # Public Schema
     f095b797-97b3-4a81-bb94-e9cd40fe3b4d: 'Link field' # Link field
     f2b78056-d43b-4b41-93dc-57fef1d1975d: 'YouthBreaks NL' # YouthBreaks NL
+    f548ef62-9b39-4c1f-a81e-d9229958ac0e: 'Google Maps url' # Google Maps url
     f93565ab-93f7-48f8-9ce7-2676f83c4780: 'R2 Mallorca' # R2 Mallorca
     fcf1ca76-1f7b-4ad5-b408-3efc786f7fc0: Home # Home
     fe7c25f5-8c08-4e32-9225-5926ac780e12: 'Cloudflare R2 Global' # Cloudflare R2 Global

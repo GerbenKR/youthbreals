@@ -1,0 +1,28 @@
+{% import 'macros/_utils' as utils %}
+
+<div class="container mb-5 pb-5 border-b border-yellow-300">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        {% if entry.clubImages|length and entry.clubImages[0] %}
+            <div class="aspect-video bg-yellow-50">
+                {{ utils.image(entry.clubImages[0], 'w-full h-full object-cover', 526, 295, 526, 295) }}
+            </div>
+        {% endif %}
+        {% if entry.clubImages|length and entry.clubImages[1] %}
+            <div class="aspect-video bg-yellow-50 hidden md:block">
+                {{ utils.image(entry.clubImages[1], 'w-full h-full object-cover', 526, 295, 526, 295) }}
+            </div>
+        {% endif %}
+    </div>
+
+    <div class="mt-8">
+        <h1 class="h2">{{ entry.title }}</h1>
+        {# <a href="{{ entry.clubSettings.one().googleMapsUrl|default("#") }}" target="_blank" class="text-gray-600">{{ entry.clubSettings.one().adress|default(null) }}</a> #}
+        <div class="flex items-center gap-1 text-gray-600">
+            {% set crumbList = seomatic.jsonLd.get('breadcrumbList').itemListElement %}
+            {% for crumb in crumbList %}
+                <a href="{{ crumb.item }}">{{ crumb.name }}</a>
+                {% if not loop.last %}&raquo;{% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</div>

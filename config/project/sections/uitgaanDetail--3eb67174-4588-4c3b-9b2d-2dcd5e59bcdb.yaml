@@ -1,0 +1,52 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - b1e8fa5f-153d-4197-8844-04f0a3fcef9e # Club detail
+handle: uitgaanDetail
+maxAuthors: 1
+name: 'Uitgaan detail'
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primaire invoer-pagina'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  1fa00b89-1304-4bcc-b401-99ad445d9241: # YouthBreaks EN
+    enabledByDefault: true
+    hasUrls: true
+    template: pages/uitgaan/_entry
+    uriFormat: 'uitgaan/{slug}'
+  1643ba74-6496-465b-8193-45ec88e23cd7: # YouthBreaks NL - Albufeira
+    enabledByDefault: true
+    hasUrls: true
+    template: pages/uitgaan/_entry
+    uriFormat: 'uitgaan/{slug}'
+  9620f8bc-de2f-4a52-ac63-94cba3bed665: # YouthBreaks
+    enabledByDefault: true
+    hasUrls: true
+    template: pages/uitgaan/_entry
+    uriFormat: 'uitgaan/{slug}'
+  ab7b1962-e0cf-44f5-a096-7aec91ca594f: # YouthBreaks NL - Mallorca
+    enabledByDefault: true
+    hasUrls: true
+    template: pages/uitgaan/_entry
+    uriFormat: 'uitgaan/{slug}'
+  c58ce353-a590-49b2-93a4-f2abd4f104f3: # YouthBreaks NL - Lloret de Mar
+    enabledByDefault: true
+    hasUrls: true
+    template: pages/uitgaan/_entry
+    uriFormat: 'uitgaan/{slug}'
+  df6abb26-4ba5-4637-9534-1d06011bf708: # YouthBreaks NL - Chersonissos
+    enabledByDefault: true
+    hasUrls: true
+    template: pages/uitgaan/_entry
+    uriFormat: 'uitgaan/{slug}'
+type: channel

@@ -1,0 +1,40 @@
+{% extends "layouts/_default" %}
+
+{% block content %}
+
+    {% include "components/hero/_uitgaan" %}
+
+    <div class="container grid grid-cols-1 lg:grid-cols-12 gap-4">
+        <article class="lg:col-span-8 text-container order-last lg:order-first">
+            {% include "components/matrix/_matrix" %}
+
+            {% if entry.clubSettings.one().adress %}
+                <br>
+                <h2>Adres van {{ entry.title }}</h2>
+                <p>Het adres van {{ entry.title }} is <b>{{ entry.clubSettings.one().adress }}</b>.</p>
+            {% endif %}
+        </article>
+
+        <aside class="lg:col-span-4 flex flex-col gap-4">
+            {% if entry.clubSettings.one().adress %}
+                <div class="p-4 bg-gray-100">
+                    <p><b>Adres:</b> {{ entry.clubSettings.one().adress|default(null) }}</p>
+                </div>
+            {% endif %}
+
+            {% if entry.clubSettings.one().googleMapsUrl %}
+                <a href="{{ entry.clubSettings.one().googleMapsUrl|default(null) }}" target="_blank" class="p-4 font-medium bg-pink-100">Openen in Google Maps &raquo;</a>
+            {% endif %}
+            {% if entry.clubSettings.one().websiteUrl %}
+                <a href="{{ entry.clubSettings.one().websiteUrl|default(null) }}" target="_blank" class="p-4 font-medium bg-pink-100">Website openen &raquo;</a>
+            {% endif %}
+            {% if entry.clubSettings.one().websiteUrl %}
+                <a href="{{ entry.clubSettings.one().websiteUrl|default(null) }}" target="_blank" class="p-4 font-medium bg-pink-100">Line-up bekijken &raquo;</a>
+            {% endif %}
+            {% if entry.clubSettings.one().ticketUrl %}
+                <a href="{{ entry.clubSettings.one().ticketUrl|default(null) }}" target="_blank" class="p-4 font-medium bg-pink-100">Tickets kopen &raquo;</a>
+            {% endif %}
+        </aside>
+    </div>
+
+{% endblock content %}
