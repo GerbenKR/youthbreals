@@ -10,6 +10,7 @@ fieldLayouts:
             autocomplete: false
             autocorrect: true
             class: null
+            dateAdded: '2024-12-16T09:20:33+00:00'
             disabled: false
             elementCondition: null
             id: null
@@ -24,7 +25,7 @@ fieldLayouts:
             placeholder: null
             providesThumbs: false
             readonly: false
-            requirable: false
+            required: true
             size: null
             step: null
             tip: null
@@ -35,6 +36,61 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: '2024-12-16T09:21:57+00:00'
+            elementCondition: null
+            fieldUid: e39f4ef5-8dec-40fe-83ef-107c617981bc # Page title
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7323b2cb-a136-4cd8-9414-260d51bfeda9
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-12-16T09:21:57+00:00'
+            elementCondition: null
+            fieldUid: d3cf3f36-3d63-4ce1-976b-b3bdaf15c5b1 # Page description
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 219d8c44-9407-40e3-be24-cf577ead760d
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-12-16T09:21:57+00:00'
+            elementCondition: null
+            fieldUid: b11847cc-da8d-47c7-bba3-200d6e853d6e # Hero image
+            handle: pageImage
+            includeInCards: false
+            instructions: null
+            label: 'Page image'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 152b229e-c7d9-428f-8ca8-37b61cd04e22
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-12-16T09:21:57+00:00'
+            elementCondition: null
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: 1c95561d-5947-4cd5-8699-3bdaae97f961
+            userCondition: null
+          -
+            dateAdded: '2024-12-16T09:20:33+00:00'
             elementCondition: null
             fieldUid: 28386272-18fb-49fe-a577-621f6e30eab0 # Hero title
             handle: null
@@ -50,6 +106,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: '2024-12-16T09:20:33+00:00'
             elementCondition: null
             fieldUid: 4f4672b8-b625-45df-92a9-c398d1d4cd63 # Hero description
             handle: null
@@ -65,6 +122,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: '2024-12-16T09:20:33+00:00'
             elementCondition: null
             fieldUid: b11847cc-da8d-47c7-bba3-200d6e853d6e # Hero image
             handle: null
@@ -80,6 +138,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: '2024-12-16T09:20:33+00:00'
             elementCondition: null
             fieldUid: e529eacf-7c43-4b0d-b7a8-124fee4d34de # CTA
             handle: heroCta
@@ -95,11 +154,13 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: '2024-12-16T09:20:33+00:00'
             elementCondition: null
             type: craft\fieldlayoutelements\HorizontalRule
             uid: 723a3112-40d1-48bf-ab15-1ebf4c292e9a
             userCondition: null
           -
+            dateAdded: '2024-12-16T09:20:33+00:00'
             elementCondition: null
             fieldUid: 9c0fe570-11a0-4087-9cc4-b3f4dae01ea6 # Matrix
             handle: null
@@ -121,6 +182,7 @@ fieldLayouts:
         elementCondition: null
         elements:
           -
+            dateAdded: '2024-12-16T09:20:33+00:00'
             elementCondition: null
             fieldUid: 7ed5075f-76f4-4d1f-bc63-24574242960c # SEO
             handle: null

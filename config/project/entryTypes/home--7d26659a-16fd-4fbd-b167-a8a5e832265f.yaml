@@ -10,6 +10,7 @@ fieldLayouts:
             autocomplete: false
             autocorrect: true
             class: null
+            dateAdded: '2024-12-16T09:19:48+00:00'
             disabled: false
             elementCondition: null
             id: null
@@ -24,7 +25,7 @@ fieldLayouts:
             placeholder: null
             providesThumbs: false
             readonly: false
-            requirable: false
+            required: true
             size: null
             step: null
             tip: null
@@ -35,6 +36,67 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: '2024-12-16T09:21:30+00:00'
+            elementCondition: null
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: eff1b51e-ab27-4681-89b5-9d5d3bf49347
+            userCondition: null
+          -
+            dateAdded: '2024-12-16T09:21:30+00:00'
+            elementCondition: null
+            fieldUid: e39f4ef5-8dec-40fe-83ef-107c617981bc # Page title
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: feaaf87e-c9d7-4db1-9678-4375fe00d9fb
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-12-16T09:21:30+00:00'
+            elementCondition: null
+            fieldUid: d3cf3f36-3d63-4ce1-976b-b3bdaf15c5b1 # Page description
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7eab59c2-a323-450f-9db0-a476bdc8b5fa
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-12-16T09:21:30+00:00'
+            elementCondition: null
+            fieldUid: b11847cc-da8d-47c7-bba3-200d6e853d6e # Hero image
+            handle: pageImage
+            includeInCards: false
+            instructions: null
+            label: pageImage
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 0d8caaf3-e8d4-4a02-8edc-8794a5482350
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-12-16T09:21:30+00:00'
+            elementCondition: null
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: d4e367e6-232c-47f5-91e7-01d9cd7549b0
+            userCondition: null
+          -
+            dateAdded: '2024-12-16T09:19:48+00:00'
             elementCondition: null
             fieldUid: 28386272-18fb-49fe-a577-621f6e30eab0 # Hero title
             handle: null
@@ -50,6 +112,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: '2024-12-16T09:19:48+00:00'
             elementCondition: null
             fieldUid: 4f4672b8-b625-45df-92a9-c398d1d4cd63 # Hero description
             handle: null
@@ -65,6 +128,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: '2024-12-16T09:19:48+00:00'
             elementCondition: null
             fieldUid: b11847cc-da8d-47c7-bba3-200d6e853d6e # Hero image
             handle: null
@@ -80,6 +144,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: '2024-12-16T09:19:48+00:00'
             elementCondition: null
             fieldUid: e529eacf-7c43-4b0d-b7a8-124fee4d34de # CTA
             handle: heroCta
@@ -95,11 +160,13 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: '2024-12-16T09:19:48+00:00'
             elementCondition: null
             type: craft\fieldlayoutelements\HorizontalRule
             uid: 22dcbffd-a395-49af-9b55-dbe6bee83475
             userCondition: null
           -
+            dateAdded: '2024-12-16T09:19:48+00:00'
             elementCondition: null
             fieldUid: 9c0fe570-11a0-4087-9cc4-b3f4dae01ea6 # Matrix
             handle: null
@@ -121,6 +188,7 @@ fieldLayouts:
         elementCondition: null
         elements:
           -
+            dateAdded: '2024-12-16T09:19:48+00:00'
             elementCondition: null
             fieldUid: 7ed5075f-76f4-4d1f-bc63-24574242960c # SEO
             handle: null
