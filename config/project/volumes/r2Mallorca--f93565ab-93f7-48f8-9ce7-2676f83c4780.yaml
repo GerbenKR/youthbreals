@@ -1,0 +1,92 @@
+altTranslationKeyFormat: null
+altTranslationMethod: none
+fieldLayouts:
+  6540bf20-2c60-4e9a-9796-ee4004f027fb:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2024-12-16T12:45:15+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\assets\AssetTitleField
+            uid: ee2efc8b-d360-42af-a33b-e8525f152f27
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            attribute: alt
+            class: null
+            cols: null
+            dateAdded: '2024-12-16T12:46:41+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            instructions: null
+            label: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: true
+            required: false
+            rows: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\assets\AltField
+            uid: eec012f9-c10a-41a7-99a7-75bc778ead57
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-12-16T12:46:41+00:00'
+            elementCondition: null
+            fieldUid: e4d3d6ad-aef0-4a56-80e1-b2e942135a5a # Source
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c7c67617-7ceb-4414-a090-7414ceac1cf5
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhoud
+        uid: 5499cc35-f453-4766-ac08-ef3581ae00e6
+        userCondition: null
+fs: r2Mallorca
+handle: r2Mallorca
+name: 'R2 Mallorca'
+sortOrder: 6
+subpath: ''
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
+transformFs: r2Mallorca
+transformSubpath: ''

@@ -1,0 +1,92 @@
+altTranslationKeyFormat: null
+altTranslationMethod: none
+fieldLayouts:
+  43262136-1119-401b-bd24-a7fae74c12d4:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2024-12-16T12:44:09+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\assets\AssetTitleField
+            uid: 7ec21820-9eb7-4905-9af0-ab6d605fa310
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            attribute: alt
+            class: null
+            cols: null
+            dateAdded: '2024-12-16T12:45:34+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            instructions: null
+            label: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: true
+            required: false
+            rows: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\assets\AltField
+            uid: a11db3c5-65d6-40b6-8f5d-d681fdaec70a
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-12-16T12:45:34+00:00'
+            elementCondition: null
+            fieldUid: e4d3d6ad-aef0-4a56-80e1-b2e942135a5a # Source
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2504a3bb-b46c-4d99-bb4a-e6ef9a56b3ec
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhoud
+        uid: 23299d8f-ace9-4c21-a10a-7ac1d66bfa74
+        userCondition: null
+fs: r2Albufeira
+handle: r2Albufeira
+name: 'R2 Albufeira'
+sortOrder: 3
+subpath: ''
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
+transformFs: ''
+transformSubpath: ''

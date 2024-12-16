@@ -1,0 +1,92 @@
+altTranslationKeyFormat: null
+altTranslationMethod: none
+fieldLayouts:
+  969751ff-63ed-4de5-835d-2db4bd906e2f:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2024-12-16T12:44:56+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\assets\AssetTitleField
+            uid: e773a416-e8b6-4afe-99cb-2cde370fbf6b
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            attribute: alt
+            class: null
+            cols: null
+            dateAdded: '2024-12-16T12:46:12+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            instructions: null
+            label: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: true
+            required: false
+            rows: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\assets\AltField
+            uid: 8e5eae1a-077f-4fec-b923-8a590c3881f3
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-12-16T12:46:12+00:00'
+            elementCondition: null
+            fieldUid: e4d3d6ad-aef0-4a56-80e1-b2e942135a5a # Source
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 813131d1-1f6a-4853-b561-cf0a260fcf5a
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhoud
+        uid: 09b96bc4-cf3d-4693-a1b3-9848abd982ec
+        userCondition: null
+fs: r2LloretDeMar
+handle: r2LloretDeMar
+name: 'R2 Lloret de Mar'
+sortOrder: 5
+subpath: ''
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
+transformFs: ''
+transformSubpath: ''
