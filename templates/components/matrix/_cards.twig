@@ -34,7 +34,7 @@
                         {% include "components/cards/_info-card" with {
                             title: card.title|default(card.entry.one().title)|default(null),
                             description: card.description|default(card.entry.one().heroDescription)|default(null),
-                            image: card.entry.one().pageImage.one()|default(null),
+                            image: card.entry.one().pageImage.one()|default(card.entry.one().clubImages.one())|default(null),
                         } %}
                     </a>
                 </li>
