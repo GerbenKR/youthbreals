@@ -7,7 +7,7 @@
                 {{ utils.image(entry.clubImages[0], 'w-full h-full object-cover', 526, 295, 526, 295) }}
             </div>
         {% endif %}
-        {% if entry.clubImages|length and entry.clubImages[1] %}
+        {% if entry.clubImages|length > 1 %}
             <div class="aspect-video bg-yellow-50 hidden md:block">
                 {{ utils.image(entry.clubImages[1], 'w-full h-full object-cover', 526, 295, 526, 295) }}
             </div>
