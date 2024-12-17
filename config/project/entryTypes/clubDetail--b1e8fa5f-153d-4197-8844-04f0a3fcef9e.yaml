@@ -86,10 +86,10 @@ fieldLayouts:
         name: Inhoud
         uid: fa145f2b-329e-4d29-972f-4fd01a3e4bf4
         userCondition: null
-handle: uitgaanDetail
+handle: clubDetail
 hasTitleField: true
 icon: ''
-name: 'Page type | Uitgaan detail'
+name: 'Page type | Club detail'
 showSlugField: true
 showStatusField: true
 slugTranslationKeyFormat: ''

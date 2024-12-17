@@ -1,0 +1,24 @@
+{% import 'macros/_utils' as utils %}
+
+{% set clubs = craft.entries().section('clubsDetail').all() %}
+{% set clubsOverview = craft.entries().section('clubsOverview').one() %}
+
+<div id="clubs">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        {% for club in clubs|slice(0, 2) %}
+            <a href="{{ club.url }}" class="group">
+                <div class="aspect-video w-full bg-yellow-50">
+                    {{ utils.image(club.clubImages.one(), 'w-full h-full object-cover pointer-events-none group-hover:scale-105 duration-200 ease-in-out', 425, 240, 360, 202) }}
+                </div>
+    
+                <div class="mt-4">
+                    <h4>{{ club.title }}</h4>
+                </div>
+            </a>
+        {% endfor %}
+    </div>
+    
+    <div class="mt-2 flex items-center justify-center">
+        <a href="{{ clubsOverview.url }}" class="block bg-yellow-600 px-4 py-3 text-white rounded-md font-bold">Alle clubs van {{ site.siteName }} bekijken</a>
+    </div>
+</div>

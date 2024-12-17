@@ -4,6 +4,8 @@
     {% include "components/hero/_content" %}
 
     {% if entry.pageType == "withSidebar" %}
+        {% set fullWithPage = false %}
+
         <div class="container grid grid-cols-1 lg:grid-cols-12 gap-4">
             <article class="col-span-8 text-container">
                 {% include "components/matrix/_matrix" %}
@@ -15,6 +17,8 @@
     {% endif %}
 
     {% if entry.pageType == "noSidebar" or entry.pageType == "onlyTextSidebarWidth" %}
+        {% set fullWithPage = true %}
+
         <div class="container">
             <article class="text-container">
                 {% include "components/matrix/_matrix" %}

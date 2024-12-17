@@ -1,4 +1,4 @@
-dateModified: 1734440965
+dateModified: 1734443041
 elementSources:
   craft\elements\Entry:
     -
@@ -78,7 +78,20 @@ elementSources:
       heading: Uitgaan
       type: heading
     -
+      defaultSort:
+        - id
+        - asc
+      defaultViewMode: ''
+      disabled: false
       key: 'single:6fc7efa1-7da9-4644-89a4-3f42a8fb7000' # Clubs overview
+      tableAttributes:
+        - status
+        - postDate
+        - expiryDate
+        - link
+      type: native
+    -
+      key: 'section:3eb67174-4588-4c3b-9b2d-2dcd5e59bcdb' # Clubs detail
       type: native
     -
       defaultSort:
@@ -92,9 +105,6 @@ elementSources:
         - postDate
         - expiryDate
         - link
-      type: native
-    -
-      key: 'section:3eb67174-4588-4c3b-9b2d-2dcd5e59bcdb' # Uitgaan detail
       type: native
     -
       heading: Overig
@@ -215,7 +225,7 @@ meta:
     3ab17238-f0e4-4956-926a-fdd94ceb7837: 'Related entry' # Related entry
     3c7ea62a-0e10-4dca-889c-eb4f178473d6: Entry # Entry
     3d4370d8-2bc1-4dd4-b518-30aaacc5b408: 'Navigation link' # Navigation link
-    3eb67174-4588-4c3b-9b2d-2dcd5e59bcdb: 'Uitgaan detail' # Uitgaan detail
+    3eb67174-4588-4c3b-9b2d-2dcd5e59bcdb: 'Clubs detail' # Clubs detail
     3fd8d14a-df11-405b-b083-25dcf44c327c: 'R2 Chersonissos' # R2 Chersonissos
     4c8a2273-4983-45d3-8852-6ae588a5dcf0: 'Site name' # Site name
     4f4672b8-b625-45df-92a9-c398d1d4cd63: 'Hero description' # Hero description
@@ -257,7 +267,7 @@ meta:
     adbc97df-3a4b-42c2-97e7-184a58ab3b76: 'Uitgaan overview' # Uitgaan overview
     b079f368-871a-4c20-9fa2-b69dce13d7ce: Navigation # Navigation
     b1dc1c79-b214-4f87-bfc2-a9ddb73168a2: 'R2 Lloret de Mar' # R2 Lloret de Mar
-    b1e8fa5f-153d-4197-8844-04f0a3fcef9e: 'Page type | Uitgaan detail' # Page type | Uitgaan detail
+    b1e8fa5f-153d-4197-8844-04f0a3fcef9e: 'Page type | Club detail' # Page type | Club detail
     b64b022d-84d7-4811-985f-fd1f0acff9bc: 'Page type | Uitgaan overview' # Page type | Uitgaan overview
     b5986cbe-32ff-44d7-a869-f9e164c3a385: 'Relation entries' # Relation entries
     b9277aaa-c0ce-4c6d-85fd-59961c503c7d: Subtitle # Subtitle

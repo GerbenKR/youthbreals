@@ -15,8 +15,8 @@
                 {% include "components/matrix/_image" %}
             {% case 'matrixTextImage' %}
                 {% include "components/matrix/_textImage" %}
-            {% case 'matrixClubOverview' %}
-                {% include "components/matrix/_club-overview" %}
+            {% case 'matrixUitgaanDetailOverview' %}
+                {% include "components/matrix/_uitgaan-detatil-overview.twig" %}
             {% case 'matrixBlogCards' %}
                 {% include "components/matrix/_blog-cards" with {
                     title: chunk.entry.title,
