@@ -1,4 +1,4 @@
-color: null
+color: orange
 fieldLayouts:
   d456bacc-ac5c-46bf-80cc-5f5608232e3b:
     tabs:
@@ -54,7 +54,7 @@ fieldLayouts:
           -
             dateAdded: '2024-12-16T20:50:15+00:00'
             elementCondition: null
-            fieldUid: 63293651-1dad-45a2-a40a-3a8e3a5bcf7a # Club settings
+            fieldUid: 63293651-1dad-45a2-a40a-3a8e3a5bcf7a # Club config
             handle: null
             includeInCards: false
             instructions: null
@@ -86,10 +86,10 @@ fieldLayouts:
         name: Inhoud
         uid: fa145f2b-329e-4d29-972f-4fd01a3e4bf4
         userCondition: null
-handle: clubDetail
+handle: uitgaanDetail
 hasTitleField: true
 icon: ''
-name: 'Club detail'
+name: 'Page type | Uitgaan detail'
 showSlugField: true
 showStatusField: true
 slugTranslationKeyFormat: ''

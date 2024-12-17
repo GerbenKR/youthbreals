@@ -3,13 +3,23 @@
 {% block content %}
     {% include "components/hero/_content" %}
 
-    <article class="container max-w-[1200px]">
-        {% include "components/matrix/_matrix" %}
-    </article>
+    {% if entry.pageType == "withSidebar" %}
+        <div class="container grid grid-cols-1 lg:grid-cols-12 gap-4">
+            <article class="col-span-8 text-container">
+                {% include "components/matrix/_matrix" %}
+            </article>
 
-    {# <div class="container grid grid-cols-1 lg:grid-cols-12 gap-4">
-        <article class="col-span-8 text-container">
-            {% include "components/matrix/_matrix" %}
-        </article>
-    </div> #}
+            <aside class="lg:col-span-4 flex flex-col gap-4">
+            </aside>
+        </div>
+    {% endif %}
+
+    {% if entry.pageType == "noSidebar" or entry.pageType == "onlyTextSidebarWidth" %}
+        <div class="container">
+            <article class="text-container">
+                {% include "components/matrix/_matrix" %}
+            </article>
+        </div>
+    {% endif %}
+
 {% endblock content %}

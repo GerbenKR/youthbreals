@@ -1,4 +1,4 @@
-color: emerald
+color: orange
 fieldLayouts:
   a30bd272-f6e5-43b2-9944-86558e828aaf:
     tabs:
@@ -160,6 +160,22 @@ fieldLayouts:
             uid: 723a3112-40d1-48bf-ab15-1ebf4c292e9a
             userCondition: null
           -
+            dateAdded: '2024-12-16T21:35:40+00:00'
+            elementCondition: null
+            fieldUid: 8c75ea78-fd85-49b8-8540-b41f95d2a4c1 # Page type
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 16a3e0e6-3bfd-465c-a08e-e59d173201e9
+            userCondition: null
+            warning: null
+            width: 100
+          -
             dateAdded: '2024-12-16T09:20:33+00:00'
             elementCondition: null
             fieldUid: 9c0fe570-11a0-4087-9cc4-b3f4dae01ea6 # Matrix
@@ -202,8 +218,8 @@ fieldLayouts:
         userCondition: null
 handle: contentPage
 hasTitleField: true
-icon: pencil
-name: 'Content page'
+icon: ''
+name: 'Page type | Content'
 showSlugField: true
 showStatusField: true
 slugTranslationKeyFormat: ''

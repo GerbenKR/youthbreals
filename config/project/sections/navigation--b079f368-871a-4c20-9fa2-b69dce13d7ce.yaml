@@ -1,7 +1,7 @@
 defaultPlacement: end
 enableVersioning: true
 entryTypes:
-  - b9723ca6-1d73-46e2-a144-756cd3e36e11 # Navigation
+  - b9723ca6-1d73-46e2-a144-756cd3e36e11 # Type | Navigation
 handle: navigation
 maxAuthors: 1
 name: Navigation

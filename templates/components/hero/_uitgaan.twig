@@ -16,7 +16,6 @@
 
     <div class="mt-8">
         <h1 class="h2">{{ entry.title }}</h1>
-        {# <a href="{{ entry.clubSettings.one().googleMapsUrl|default("#") }}" target="_blank" class="text-gray-600">{{ entry.clubSettings.one().adress|default(null) }}</a> #}
         <div class="flex items-center gap-1 text-gray-600">
             {% set crumbList = seomatic.jsonLd.get('breadcrumbList').itemListElement %}
             {% for crumb in crumbList %}

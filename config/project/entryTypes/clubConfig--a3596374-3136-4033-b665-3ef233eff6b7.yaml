@@ -1,10 +1,31 @@
 color: null
 fieldLayouts:
   238802d5-bff1-44c6-9309-31bb6ed1cb44:
+    cardView:
+      - 'layoutElement:6e224ae6-5848-4e1d-9163-fbecc4706bd5'
+      - 'layoutElement:4323282d-0cf8-45ec-a2f6-87e2195bd02b'
+      - 'layoutElement:43837494-195a-4958-baaa-2dff0df2562a'
+      - 'layoutElement:ffb6fdc7-16ff-4371-a109-db0a835bc734'
     tabs:
       -
         elementCondition: null
         elements:
+          -
+            dateAdded: '2024-12-16T21:54:21+00:00'
+            elementCondition: null
+            fieldUid: 79372943-5d5e-4ce9-8fca-001ceaeda8d5 # Description
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a44a630b-eeb5-4e67-a637-c84fcdab6edf
+            userCondition: null
+            warning: null
+            width: 100
           -
             dateAdded: '2024-12-16T20:49:54+00:00'
             elementCondition: null
@@ -72,10 +93,10 @@ fieldLayouts:
         name: Inhoud
         uid: 9fe0e75f-030b-4f45-945d-44cfe99b71da
         userCondition: null
-handle: clubSettings
+handle: clubConfig
 hasTitleField: false
 icon: ''
-name: 'Club settings'
+name: 'Club config'
 showSlugField: true
 showStatusField: true
 slugTranslationKeyFormat: ''

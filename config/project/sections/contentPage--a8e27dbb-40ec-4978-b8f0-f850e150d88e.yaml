@@ -1,7 +1,7 @@
 defaultPlacement: end
 enableVersioning: true
 entryTypes:
-  - 1ac1c857-31dd-42a4-89fa-400ff951b829 # Content page
+  - 1ac1c857-31dd-42a4-89fa-400ff951b829 # Page type | Content
 handle: contentPage
 maxAuthors: 1
 name: 'Content page'

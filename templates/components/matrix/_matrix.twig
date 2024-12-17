@@ -1,14 +1,22 @@
 {% for chunk in entry.matrix %}
     {% if chunk.type == 'markup' %}
-        <div class="text-container">
-            {{ chunk }}
-        </div>
+        {% if entry.pageType == "onlyTextSidebarWidth" %}
+            <div class="text-container lg:w-8/12">
+                {{ chunk }}
+            </div>
+        {% else %}
+            <div class="text-container">
+                {{ chunk }}
+            </div>
+        {% endif %}
     {% else %}
         {% switch chunk.entry.type.handle %}
             {% case 'matrixImage' %}
                 {% include "components/matrix/_image" %}
             {% case 'matrixTextImage' %}
                 {% include "components/matrix/_textImage" %}
+            {% case 'matrixClubOverview' %}
+                {% include "components/matrix/_club-overview" %}
             {% case 'matrixBlogCards' %}
                 {% include "components/matrix/_blog-cards" with {
                     title: chunk.entry.title,

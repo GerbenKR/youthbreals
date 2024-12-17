@@ -1,7 +1,7 @@
 defaultPlacement: end
 enableVersioning: true
 entryTypes:
-  - 8d688872-0500-4e64-969e-4c7d4055d5cf # Page | Blog detail
+  - 8d688872-0500-4e64-969e-4c7d4055d5cf # Page type | Blog detail
 handle: blog
 maxAuthors: 1
 name: Blog

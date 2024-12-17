@@ -1,7 +1,7 @@
 defaultPlacement: end
 enableVersioning: true
 entryTypes:
-  - 7d26659a-16fd-4fbd-b167-a8a5e832265f # Home
+  - 7d26659a-16fd-4fbd-b167-a8a5e832265f # Page type | Home
 handle: home
 maxAuthors: 1
 name: Home

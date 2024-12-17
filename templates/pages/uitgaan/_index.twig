@@ -1,7 +1,15 @@
 {% extends "layouts/_default" %}
 
 {% block content %}
-    <article class="container py-10 text-container">
-        {% include "components/matrix/_matrix" %}
-    </article>
+    {% include "components/hero/_content" %}
+
+    <div class="container grid grid-cols-1 lg:grid-cols-12 gap-4">
+        <article class="col-span-8 text-container">
+            {% include "components/matrix/_matrix" %}
+        </article>
+
+        <aside class="lg:col-span-4 flex flex-col gap-4">
+            <a href="#clubs" target="_blank" class="p-4 font-medium bg-pink-100">Alle clubs in {{ site.siteName }} &raquo;</a>
+        </aside>
+    </div>
 {% endblock content %}

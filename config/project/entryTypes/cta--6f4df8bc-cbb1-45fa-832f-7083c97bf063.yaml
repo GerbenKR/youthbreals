@@ -1,4 +1,4 @@
-color: pink
+color: null
 fieldLayouts:
   11fa96d2-4f15-4788-91df-1bc5b1abd4d1:
     tabs:
@@ -6,35 +6,7 @@ fieldLayouts:
         elementCondition: null
         elements:
           -
-            autocapitalize: true
-            autocomplete: false
-            autocorrect: true
-            class: null
-            disabled: false
-            elementCondition: null
-            id: null
-            includeInCards: false
-            inputType: null
-            instructions: null
-            label: null
-            max: null
-            min: null
-            name: null
-            orientation: null
-            placeholder: null
-            providesThumbs: false
-            readonly: false
-            requirable: false
-            size: null
-            step: null
-            tip: null
-            title: null
-            type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: f749c095-6473-4f70-84ed-798f3ba046d4
-            userCondition: null
-            warning: null
-            width: 100
-          -
+            dateAdded: '2024-12-17T12:35:42+00:00'
             elementCondition: null
             fieldUid: f095b797-97b3-4a81-bb94-e9cd40fe3b4d # Link field
             handle: null
@@ -54,7 +26,7 @@ fieldLayouts:
         userCondition: null
 handle: cta
 hasTitleField: false
-icon: paperclip
+icon: ''
 name: CTA
 showSlugField: false
 showStatusField: false

@@ -1,4 +1,4 @@
-color: null
+color: orange
 fieldLayouts:
   fe0ae133-84cc-4302-8af5-d25c44974623:
     tabs:
@@ -152,10 +152,10 @@ fieldLayouts:
         name: Inhoud
         uid: 000cfefd-daed-42fd-b522-2a4864ddda6b
         userCondition: null
-handle: pageBlogOverview
+handle: blogOverview
 hasTitleField: true
 icon: ''
-name: 'Page | Blog overview'
+name: 'Page type | Blog overview'
 showSlugField: true
 showStatusField: true
 slugTranslationKeyFormat: ''

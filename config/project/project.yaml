@@ -1,4 +1,4 @@
-dateModified: 1734383514
+dateModified: 1734440965
 elementSources:
   craft\elements\Entry:
     -
@@ -75,6 +75,28 @@ elementSources:
         - link
       type: native
     -
+      heading: Uitgaan
+      type: heading
+    -
+      key: 'single:6fc7efa1-7da9-4644-89a4-3f42a8fb7000' # Clubs overview
+      type: native
+    -
+      defaultSort:
+        - id
+        - asc
+      defaultViewMode: ''
+      disabled: false
+      key: 'single:adbc97df-3a4b-42c2-97e7-184a58ab3b76' # Uitgaan overview
+      tableAttributes:
+        - status
+        - postDate
+        - expiryDate
+        - link
+      type: native
+    -
+      key: 'section:3eb67174-4588-4c3b-9b2d-2dcd5e59bcdb' # Uitgaan detail
+      type: native
+    -
       heading: Overig
       type: heading
     -
@@ -90,6 +112,9 @@ elementSources:
         - expiryDate
         - link
       type: native
+    -
+      heading: ''
+      type: heading
 email:
   fromEmail: gerbenkr@hotmail.nl
   fromName: YouthBreaks
@@ -185,7 +210,7 @@ fs:
 meta:
   __names__:
     0c806500-1776-487d-9169-5c11d46ea615: 'Matrix | Text + Image' # Matrix | Text + Image
-    1ac1c857-31dd-42a4-89fa-400ff951b829: 'Content page' # Content page
+    1ac1c857-31dd-42a4-89fa-400ff951b829: 'Page type | Content' # Page type | Content
     1fa00b89-1304-4bcc-b401-99ad445d9241: 'YouthBreaks EN' # YouthBreaks EN
     3ab17238-f0e4-4956-926a-fdd94ceb7837: 'Related entry' # Related entry
     3c7ea62a-0e10-4dca-889c-eb4f178473d6: Entry # Entry
@@ -197,12 +222,16 @@ meta:
     6c70dec0-60bb-41ba-8577-35f5b06b9e13: 'Site color' # Site color
     06efb1e7-f5d8-4694-8151-7783e392018e: 'Ticket URL' # Ticket URL
     6f4df8bc-cbb1-45fa-832f-7083c97bf063: CTA # CTA
-    7d26659a-16fd-4fbd-b167-a8a5e832265f: Home # Home
+    6fc7efa1-7da9-4644-89a4-3f42a8fb7000: 'Clubs overview' # Clubs overview
+    7d26659a-16fd-4fbd-b167-a8a5e832265f: 'Page type | Home' # Page type | Home
     7ed5075f-76f4-4d1f-bc63-24574242960c: SEO # SEO
-    8d688872-0500-4e64-969e-4c7d4055d5cf: 'Page | Blog detail' # Page | Blog detail
+    8c75ea78-fd85-49b8-8540-b41f95d2a4c1: 'Page type' # Page type
+    8d688872-0500-4e64-969e-4c7d4055d5cf: 'Page type | Blog detail' # Page type | Blog detail
     9c0fe570-11a0-4087-9cc4-b3f4dae01ea6: Matrix # Matrix
+    9f43eb87-b2fc-4335-a926-7e54dba6d119: 'Matrix | Uitgaan detail overview' # Matrix | Uitgaan detail overview
     15bfb93a-1737-4d9e-9fc0-977b5f2e3805: Site # Site
-    25dd143b-c54a-4d69-920b-dcf549daf145: 'Page | Blog overview' # Page | Blog overview
+    19a010cb-6a0f-466d-a533-6a82200a6739: 'Page type | Clubs overview' # Page type | Clubs overview
+    25dd143b-c54a-4d69-920b-dcf549daf145: 'Page type | Blog overview' # Page type | Blog overview
     61af5648-4e25-4452-b3d6-9b822c0b4489: 'Tailwind Color' # Tailwind Color
     66c3e5d1-0a34-40db-b67a-6794ee6defb5: 'Info cards' # Info cards
     71ea925b-34f0-4b0e-9d7e-f0f16840f2cf: 'Square card' # Square card
@@ -220,17 +249,19 @@ meta:
     9620f8bc-de2f-4a52-ac63-94cba3bed665: YouthBreaks # YouthBreaks
     154402bc-4e13-4443-a177-5a7bc2b016b2: 'Matrix | Image' # Matrix | Image
     28386272-18fb-49fe-a577-621f6e30eab0: 'Hero title' # Hero title
-    63293651-1dad-45a2-a40a-3a8e3a5bcf7a: 'Club settings' # Club settings
+    63293651-1dad-45a2-a40a-3a8e3a5bcf7a: 'Club config' # Club config
     79372943-5d5e-4ce9-8fca-001ceaeda8d5: Description # Description
     a8e27dbb-40ec-4978-b8f0-f850e150d88e: 'Content page' # Content page
-    a3596374-3136-4033-b665-3ef233eff6b7: 'Club settings' # Club settings
+    a3596374-3136-4033-b665-3ef233eff6b7: 'Club config' # Club config
     ab7b1962-e0cf-44f5-a096-7aec91ca594f: 'YouthBreaks NL - Mallorca' # YouthBreaks NL - Mallorca
+    adbc97df-3a4b-42c2-97e7-184a58ab3b76: 'Uitgaan overview' # Uitgaan overview
     b079f368-871a-4c20-9fa2-b69dce13d7ce: Navigation # Navigation
     b1dc1c79-b214-4f87-bfc2-a9ddb73168a2: 'R2 Lloret de Mar' # R2 Lloret de Mar
-    b1e8fa5f-153d-4197-8844-04f0a3fcef9e: 'Club detail' # Club detail
+    b1e8fa5f-153d-4197-8844-04f0a3fcef9e: 'Page type | Uitgaan detail' # Page type | Uitgaan detail
+    b64b022d-84d7-4811-985f-fd1f0acff9bc: 'Page type | Uitgaan overview' # Page type | Uitgaan overview
     b5986cbe-32ff-44d7-a869-f9e164c3a385: 'Relation entries' # Relation entries
     b9277aaa-c0ce-4c6d-85fd-59961c503c7d: Subtitle # Subtitle
-    b9723ca6-1d73-46e2-a144-756cd3e36e11: Navigation # Navigation
+    b9723ca6-1d73-46e2-a144-756cd3e36e11: 'Type | Navigation' # Type | Navigation
     b11847cc-da8d-47c7-bba3-200d6e853d6e: 'Hero image' # Hero image
     bc0428b0-cc69-43d9-85c4-85b3719f296a: 'Image position' # Image position
     c0b15c5d-7161-40ce-82ae-d90d4efe91c0: Simple # Simple

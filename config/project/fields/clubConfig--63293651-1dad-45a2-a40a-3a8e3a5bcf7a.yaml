@@ -1,13 +1,13 @@
 columnSuffix: null
-handle: clubSettings
+handle: clubConfig
 instructions: null
-name: 'Club settings'
+name: 'Club config'
 searchable: false
 settings:
   createButtonLabel: null
   defaultIndexViewMode: cards
   entryTypes:
-    - a3596374-3136-4033-b665-3ef233eff6b7 # Club settings
+    - a3596374-3136-4033-b665-3ef233eff6b7 # Club config
   includeTableView: false
   maxEntries: 1
   minEntries: 1

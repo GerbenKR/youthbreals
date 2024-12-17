@@ -1,4 +1,4 @@
-color: cyan
+color: orange
 fieldLayouts:
   dcf8c4bd-c198-4b9b-837e-3d9589cdde42:
     tabs:
@@ -208,8 +208,8 @@ fieldLayouts:
         userCondition: null
 handle: home
 hasTitleField: true
-icon: house
-name: Home
+icon: ''
+name: 'Page type | Home'
 showSlugField: true
 showStatusField: true
 slugTranslationKeyFormat: ''

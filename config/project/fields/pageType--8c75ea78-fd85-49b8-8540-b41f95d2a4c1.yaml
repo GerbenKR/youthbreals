@@ -1,0 +1,44 @@
+columnSuffix: null
+handle: pageType
+instructions: null
+name: 'Page type'
+searchable: false
+settings:
+  customOptions: false
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - 'With sidebar'
+        -
+          - value
+          - withSidebar
+        -
+          - default
+          - '1'
+    -
+      __assoc__:
+        -
+          - label
+          - 'No sidebar'
+        -
+          - value
+          - noSidebar
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - 'Only text sidebar width'
+        -
+          - value
+          - onlyTextSidebarWidth
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Dropdown
