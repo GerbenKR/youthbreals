@@ -12,5 +12,5 @@ settings:
     - '#155182'
     - '#edb936'
 translationKeyFormat: null
-translationMethod: none
+translationMethod: site
 type: craft\fields\Color
