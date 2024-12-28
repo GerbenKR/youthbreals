@@ -1,14 +1,16 @@
 {% import 'macros/_utils' as utils %}
 
-<section class="relative w-full min-h-[350px] h-[250px] flex flex-col items-center justify-center bg-cover bg-center">
+<section class="mb-8 relative w-full {% if entry.heroDescription %} h-[350px] {% else %}h-[250px]  {% endif %} flex flex-col items-center justify-center bg-cover bg-center bg-gray-50">
     {{ utils.image(entry.heroImage.one(), 'w-full h-full object-cover pointer-events-none', 1885, 350, 665, 250) }}
 
     <div class="absolute top-0 left-0 w-full h-full flex items-center justify-center flex-col text-center">
         <h1 class="text-3xl font-semibold text-white text-shadow">{{ entry.heroTitle }}</h1>
-        <p class="mt-2 text-lg font-medium text-white text-shadow ">{{ entry.heroDescription }}</p>
+        {% if entry.heroDescription %}
+            <p class="mt-2 text-lg font-medium text-white text-shadow ">{{ entry.heroDescription }}</p>
+        {% endif %}
     </div>
 </section>
-<section class="mt-4 mb-10 container">
+{# <section class="mt-4 mb-10 container">
     <div class="flex items-center gap-2">
         {% set crumbList = seomatic.jsonLd.get('breadcrumbList').itemListElement %}
         {% for crumb in crumbList %}
@@ -16,5 +18,5 @@
             {% if not loop.last %}&raquo;{% endif %}
         {% endfor %}
     </div>
-</section>
+</section> #}
 

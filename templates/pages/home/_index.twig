@@ -3,22 +3,13 @@
 {% set fullWithPage = true %}
 
 {% block content %}
-
     {% include "components/hero/_home" %}
 
     <article class="container py-10">
-
-        {# <div  class="grid grid-cols-3">
-            {% include "components/cards/_square-card" with {
-                title: "Uitgaan",
-                subtitle: "in Albuferia"
-            } %}
-        </div> #}
-
         {% include "components/matrix/_matrix" %}
     </article>
 
-    {# <div class="mt-10 container">
+    {# <div class="container text-container">
         <h1>H1 Dit is een mooi stuk tekst of niet?</h1>
         <h2>h2 Dit is een mooi stuk tekst of niet?</h2>
         <h3>h3 Dit is een mooi stuk tekst of niet?</h3>
@@ -26,7 +17,9 @@
         <h5>h5 Dit is een mooi stuk tekst of niet?</h5>
         <h6>h6 Dit is een mooi stuk tekst of niet?</h6>
 
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque ipsum necessitatibus cum excepturi repellendus. Vel suscipit labore inventore non expedita cum blanditiis, aspernatur necessitatibus unde officia, aperiam minus eveniet deserunt.</p>
+        <a href="#"  class="btn-primary">Dit is een primary button</a>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum error vitae perspiciatis nostrum non minima, aut alias vero eius, nesciunt, cumque quam consequatur eos necessitatibus. Commodi reiciendis odit cupiditate aliquam. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque ipsum necessitatibus cum excepturi repellendus. Vel suscipit labore inventore non expedita cum blanditiis, aspernatur necessitatibus unde officia, aperiam minus eveniet deserunt.</p>
 
         <ul>
             <li>Test</li>
@@ -39,5 +32,9 @@
             <li>Test</li>
             <li>Test</li>
         </ol>
+
+        <h2>Dit is een subtitle</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut eligendi officia atque voluptas repudiandae modi incidunt exercitationem, facilis sed nobis quod commodi qui amet nam impedit alias recusandae voluptate laudantium. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque facilis ipsum quas autem hic fugiat laborum quibusdam eaque unde iste, dolorum aliquam facere! Dolores totam labore voluptas odio quaerat assumenda. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum deleniti fuga quasi nulla, cupiditate est aperiam rem reprehenderit numquam officiis quidem aut autem excepturi quam, tenetur beatae. In, modi aut?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt eaque labore ipsum excepturi. Voluptas earum, provident repellat alias doloremque consequatur porro nostrum impedit unde maxime, sapiente qui eius minus ut? Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque aliquam fugit, optio iusto porro omnis rem! Eius nostrum autem in quaerat voluptates debitis dolorum reprehenderit soluta sequi? Corporis, officiis rerum.</p>
     </div> #}
 {% endblock content %}

@@ -1,13 +1,13 @@
 columnSuffix: null
-handle: infoCards
+handle: landscapeCards
 instructions: null
-name: 'Info cards'
+name: 'Landscape Cards'
 searchable: false
 settings:
   createButtonLabel: null
   defaultIndexViewMode: cards
   entryTypes:
-    - 190ed61d-ffbd-480b-ad5f-0b1e2b935b0a # Type | Info card
+    - 72dced8e-04ec-481f-8fbb-72921e2ac568 # Type | Landscape Card
   includeTableView: false
   maxEntries: null
   minEntries: null

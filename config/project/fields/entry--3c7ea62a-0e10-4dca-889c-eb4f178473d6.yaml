@@ -8,10 +8,10 @@ settings:
   branchLimit: null
   maintainHierarchy: false
   maxRelations: 1
-  minRelations: 1
+  minRelations: 0
   selectionLabel: null
   showCardsInGrid: false
-  showSiteMenu: false
+  showSiteMenu: true
   sources: '*'
   targetSiteId: null
   validateRelatedElements: false

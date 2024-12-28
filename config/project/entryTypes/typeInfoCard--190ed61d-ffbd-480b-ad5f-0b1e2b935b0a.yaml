@@ -1,6 +1,6 @@
-color: null
+color: blue
 fieldLayouts:
-  ae541704-a1f2-4576-8bff-fa8a288c6e61:
+  c950c5e4-9221-41a0-99c4-7aea5640e849:
     tabs:
       -
         elementCondition: null
@@ -10,13 +10,13 @@ fieldLayouts:
             autocomplete: false
             autocorrect: true
             class: null
-            dateAdded: '2024-12-16T09:36:44+00:00'
+            dateAdded: '2024-12-16T11:32:08+00:00'
             disabled: false
             elementCondition: null
             id: null
             includeInCards: false
             inputType: null
-            instructions: 'Overschrijft de relatie title'
+            instructions: null
             label: null
             max: null
             min: null
@@ -31,49 +31,65 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: 15f84ee6-60a9-4c83-b053-40a2911eb110
+            uid: 6f4da3ac-bbdb-4276-b28f-fca213ec608d
             userCondition: null
             warning: null
             width: 100
           -
-            dateAdded: '2024-12-16T09:40:28+00:00'
+            dateAdded: '2024-12-16T11:33:53+00:00'
             elementCondition: null
-            fieldUid: b9277aaa-c0ce-4c6d-85fd-59961c503c7d # Subtitle
+            fieldUid: 79372943-5d5e-4ce9-8fca-001ceaeda8d5 # Description
             handle: null
-            includeInCards: true
+            includeInCards: false
             instructions: null
             label: null
             providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: f7cb9e65-f09c-4300-9cad-e8873de7f88e
+            uid: 33403487-67d9-41ea-98d1-d402c508aea8
             userCondition: null
             warning: null
             width: 100
           -
-            dateAdded: '2024-12-16T09:40:28+00:00'
+            dateAdded: '2024-12-28T12:03:29+00:00'
             elementCondition: null
-            fieldUid: 3c7ea62a-0e10-4dca-889c-eb4f178473d6 # Entry
+            fieldUid: 93e199ba-c647-4e82-bdcf-500a3c604ec0 # CTA Text
             handle: null
-            includeInCards: true
-            instructions: 'Wordt gebruikt voor het ophalen van de zichtbare gegevens en de URL, kan worden overschreven door het veld Title en Subtitle te gebruiken.'
+            includeInCards: false
+            instructions: null
             label: null
             providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 100d7392-debe-423c-9124-031d468ef5a7
+            uid: 879537e9-a261-4d17-b701-d2c6fd77682b
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-12-16T11:33:53+00:00'
+            elementCondition: null
+            fieldUid: 3c7ea62a-0e10-4dca-889c-eb4f178473d6 # Entry
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ec434b4c-4ebb-4321-a0ba-5482fbe51ebb
             userCondition: null
             warning: null
             width: 100
         name: Inhoud
-        uid: 037155ef-f71e-4804-99b4-214e8e53b33f
+        uid: 9b57d257-6e07-4cb4-9f12-c2f8a323cc37
         userCondition: null
-handle: squareCard
+handle: typeInfoCard
 hasTitleField: true
 icon: ''
-name: 'Square card'
+name: 'Type | Info card'
 showSlugField: true
 showStatusField: true
 slugTranslationKeyFormat: ''

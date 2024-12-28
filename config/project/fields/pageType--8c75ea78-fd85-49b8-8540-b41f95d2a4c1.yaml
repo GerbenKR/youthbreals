@@ -40,5 +40,5 @@ settings:
           - default
           - ''
 translationKeyFormat: null
-translationMethod: none
+translationMethod: site
 type: craft\fields\Dropdown

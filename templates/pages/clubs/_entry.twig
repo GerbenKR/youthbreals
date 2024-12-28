@@ -1,40 +1,89 @@
+{% import 'macros/_utils' as utils %}
 {% extends "layouts/_default" %}
 
 {% set fullWithPage = false %}
 
 {% block content %}
-    {% include "components/hero/_uitgaan" %}
+    <div class="container mt-4 grid grid-cols-1 md:grid-cols-2 gap-4">
+        {% if entry.clubImages|length and entry.clubImages[0] %}
+            <div class="aspect-video bg-yellow-50">
+                {{ utils.image(entry.clubImages[0], 'w-full h-full object-cover rounded-md', 526, 295, 526, 295) }}
+            </div>
+        {% endif %}
+        {% if entry.clubImages|length > 1 %}
+            <div class="aspect-video bg-yellow-50 hidden md:block">
+                {{ utils.image(entry.clubImages[1], 'w-full h-full object-cover rounded-md', 526, 295, 526, 295) }}
+            </div>
+        {% endif %}
+    </div>
 
-    <div class="container grid grid-cols-1 lg:grid-cols-12 gap-4">
-        <article class="lg:col-span-8 text-container order-last lg:order-first">
+    <div class="mt-5 container lg:grid grid-cols-1 lg:grid-cols-12 gap-8">
+        <article class="col-span-8 text-container">
+
+            <div class="pb-5 mb-5 border-b border-gray-200">
+                <h1 class="!text-3xl">{{ entry.title }}</h1>
+
+                {% if entry.clubUsps and entry.clubUsps|length %}
+                    <div class="mt-2 flex items-center gap-x-2 flex-wrap text-gray-700">
+                        {% for usp in entry.clubUsps.all() %}
+                            <div>{{ usp.title }}</div>
+                            {% if not loop.last %}&#8226;{% endif %}
+                        {% endfor %}
+                    </div>
+                {% endif %}
+            </div>
+
+            <div class="lg:hidden mb-3">
+                <a href="#information" class="bg-primary rounded-md text-white font-bold p-4 flex items-center justify-between group">
+                    <span class="group-hover:underline">Adres, tickets en lineup bekijken</span>
+                    <div class="group-hover:-translate-x-2 duration-200 rotate-90">
+                        &raquo;
+                    </div>
+                </a>
+            </div>
+
             {% include "components/matrix/_matrix" %}
-
-            {% if entry.clubConfig.one().adress %}
-                <br>
-                <h2>Adres van {{ entry.title }}</h2>
-                <p>Het adres van {{ entry.title }} is <b>{{ entry.clubConfig.one().adress }}</b>.</p>
-            {% endif %}
         </article>
 
-        <aside class="lg:col-span-4 flex flex-col gap-4">
-            {% if entry.clubConfig.one().adress %}
-                <div class="p-4 bg-gray-100">
-                    <p><b>Adres:</b> {{ entry.clubConfig.one().adress|default(null) }}</p>
-                </div>
-            {% endif %}
+        <aside class="col-span-4 flex flex-col gap-4">
+            <div class="w-full aspect-square bg-gray-100"></div>
 
-            {% if entry.clubConfig.one().googleMapsUrl %}
-                <a href="{{ entry.clubConfig.one().googleMapsUrl|default(null) }}" target="_blank" class="p-4 font-medium bg-pink-100">Openen in Google Maps &raquo;</a>
-            {% endif %}
-            {% if entry.clubConfig.one().websiteUrl %}
-                <a href="{{ entry.clubConfig.one().websiteUrl|default(null) }}" target="_blank" class="p-4 font-medium bg-pink-100">Website openen &raquo;</a>
-            {% endif %}
-            {% if entry.clubConfig.one().websiteUrl %}
-                <a href="{{ entry.clubConfig.one().websiteUrl|default(null) }}" target="_blank" class="p-4 font-medium bg-pink-100">Line-up bekijken &raquo;</a>
-            {% endif %}
-            {% if entry.clubConfig.one().ticketUrl %}
-                <a href="{{ entry.clubConfig.one().ticketUrl|default(null) }}" target="_blank" class="p-4 font-medium bg-pink-100">Tickets kopen &raquo;</a>
-            {% endif %}
+            <div class="flex flex-col gap-3" id="information">
+                <div class="font-bold">Informatie over {{ entry.title }}:</div>
+
+                {% if entry.clubConfig.one().googleMapsUrl %}
+                    <a href="{{ entry.clubConfig.one().googleMapsUrl|default(null) }}" target="_blank" class="bg-primary rounded-md text-white font-bold p-4 flex items-center justify-between group">
+                        <span class="group-hover:underline">Openen in Google Maps</span>
+                        <div class="group-hover:-translate-x-2 duration-200">
+                            &raquo;
+                        </div>
+                    </a>
+                {% endif %}
+                {% if entry.clubConfig.one().websiteUrl %}
+                    <a href="{{ entry.clubConfig.one().websiteUrl|default(null) }}" target="_blank" class="bg-primary rounded-md text-white font-bold p-4 flex items-center justify-between group">
+                        <span class="group-hover:underline">Website openen</span>
+                        <div class="group-hover:-translate-x-2 duration-200">
+                            &raquo;
+                        </div>
+                    </a>
+                {% endif %}
+                {% if entry.clubConfig.one().websiteUrl %}
+                    <a href="{{ entry.clubConfig.one().websiteUrl|default(null) }}" target="_blank" class="bg-primary rounded-md text-white font-bold p-4 flex items-center justify-between group">
+                        <span class="group-hover:underline">Line-up bekijken</span>
+                        <div class="group-hover:-translate-x-2 duration-200">
+                            &raquo;
+                        </div>
+                    </a>
+                {% endif %}
+                {% if entry.clubConfig.one().ticketUrl %}
+                    <a href="{{ entry.clubConfig.one().ticketUrl|default(entry.clubConfig.one().websiteUrl)|default(null) }}" target="_blank" class="bg-primary rounded-md text-white font-bold p-4 flex items-center justify-between group">
+                        <span class="group-hover:underline">Tickets kopen</span>
+                        <div class="group-hover:-translate-x-2 duration-200">
+                            &raquo;
+                        </div>
+                    </a>
+                {% endif %}
+            </div>
         </aside>
     </div>
 

@@ -1,0 +1,20 @@
+color: green
+fieldLayouts:
+  701b5c70-4ef1-48fd-97e6-e949a9058ed3:
+    tabs:
+      -
+        elementCondition: null
+        name: Inhoud
+        uid: 64426ddc-4a3f-431d-afa7-033f7ff5e57c
+        userCondition: null
+handle: matrixAdSenseBanner
+hasTitleField: false
+icon: ''
+name: 'Matrix | AdSense banner'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: ''
+slugTranslationMethod: site
+titleFormat: ''
+titleTranslationKeyFormat: ''
+titleTranslationMethod: site

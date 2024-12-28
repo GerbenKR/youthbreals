@@ -4,13 +4,13 @@ instructions: 'Bijvoorbeeld ''green'' of ''pink'''
 name: 'Site color'
 searchable: false
 settings:
-  byteLimit: null
-  charLimit: null
-  code: false
-  initialRows: 4
-  multiline: false
-  placeholder: null
-  uiMode: normal
+  defaultColor: null
+  presets:
+    - '#369bed'
+    - '#ed3636'
+    - '#ed6a36'
+    - '#155182'
+    - '#edb936'
 translationKeyFormat: null
-translationMethod: site
-type: craft\fields\PlainText
+translationMethod: none
+type: craft\fields\Color

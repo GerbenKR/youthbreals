@@ -25,13 +25,16 @@
                 } %}
             {% case 'matrixCards' %}
                 {% include "components/matrix/_cards" with {
-                    title: chunk.entry.title,
-                    description: chunk.entry.description,
-                    squareCards: chunk.entry.squareCards,
+                    contentCards: chunk.entry.contentCards,
                     infoCards: chunk.entry.infoCards,
+                    squareCards: chunk.entry.squareCards,
+                    landscapeCards: chunk.entry.landscapeCards,
+                    cta: chunk.entry.cta.all(),
                 } %}
             {% case 'matrixRelatedPost' %}
                 {% include "components/matrix/_related-post" %}
+            {% case 'matrixTwoColumnText' %}
+                {% include "components/matrix/_two-column-text" %}
         {% endswitch %}
     {% endif %}
 {% endfor %}

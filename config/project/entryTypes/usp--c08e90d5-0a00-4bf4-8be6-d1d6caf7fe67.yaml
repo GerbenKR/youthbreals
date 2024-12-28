@@ -1,6 +1,6 @@
-color: blue
+color: null
 fieldLayouts:
-  579dda3b-c9be-4af0-98b4-ad5b7a02959f:
+  40728e32-c1cd-4f28-88a7-77b615bb782a:
     tabs:
       -
         elementCondition: null
@@ -10,7 +10,7 @@ fieldLayouts:
             autocomplete: false
             autocorrect: true
             class: null
-            dateAdded: '2024-12-16T11:24:13+00:00'
+            dateAdded: '2024-12-28T17:44:25+00:00'
             disabled: false
             elementCondition: null
             id: null
@@ -31,34 +31,18 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: f1cd08e5-90bc-47b8-b02d-011f0a5c3e10
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            dateAdded: '2024-12-16T11:24:13+00:00'
-            elementCondition: null
-            fieldUid: 3d4370d8-2bc1-4dd4-b518-30aaacc5b408 # Navigation link
-            handle: null
-            includeInCards: false
-            instructions: null
-            label: null
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 5e26acc6-7ea5-4b58-8caf-395a5e2a1ca6
+            uid: 642b9cec-3bed-484a-a0b2-d641906ac23f
             userCondition: null
             warning: null
             width: 100
         name: Inhoud
-        uid: fe32953f-8465-4ced-925e-7db14fbdf849
+        uid: 3554f284-d02b-4dfd-8193-08e5b8cfeefa
         userCondition: null
-handle: navigation
+handle: usp
 hasTitleField: true
 icon: ''
-name: 'Type | Navigation'
-showSlugField: false
+name: USP
+showSlugField: true
 showStatusField: true
 slugTranslationKeyFormat: ''
 slugTranslationMethod: site

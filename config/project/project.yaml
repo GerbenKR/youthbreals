@@ -1,4 +1,4 @@
-dateModified: 1734443041
+dateModified: 1735410724
 elementSources:
   craft\elements\Entry:
     -
@@ -224,6 +224,7 @@ meta:
     1fa00b89-1304-4bcc-b401-99ad445d9241: 'YouthBreaks EN' # YouthBreaks EN
     3ab17238-f0e4-4956-926a-fdd94ceb7837: 'Related entry' # Related entry
     3c7ea62a-0e10-4dca-889c-eb4f178473d6: Entry # Entry
+    3d5ded20-3a6c-40cf-9f9b-c61d3aa0f20e: 'Club usp''s' # Club usp's
     3d4370d8-2bc1-4dd4-b518-30aaacc5b408: 'Navigation link' # Navigation link
     3eb67174-4588-4c3b-9b2d-2dcd5e59bcdb: 'Clubs detail' # Clubs detail
     3fd8d14a-df11-405b-b083-25dcf44c327c: 'R2 Chersonissos' # R2 Chersonissos
@@ -240,13 +241,19 @@ meta:
     9c0fe570-11a0-4087-9cc4-b3f4dae01ea6: Matrix # Matrix
     9f43eb87-b2fc-4335-a926-7e54dba6d119: 'Matrix | Uitgaan detail overview' # Matrix | Uitgaan detail overview
     15bfb93a-1737-4d9e-9fc0-977b5f2e3805: Site # Site
+    18be273d-a077-4e3a-b874-712fefb90c8a: 'Type | Content card' # Type | Content card
     19a010cb-6a0f-466d-a533-6a82200a6739: 'Page type | Clubs overview' # Page type | Clubs overview
     25dd143b-c54a-4d69-920b-dcf549daf145: 'Page type | Blog overview' # Page type | Blog overview
+    53b080f1-bb49-47cf-ba54-8d9a19febbfb: 'Matrix | Two column text' # Matrix | Two column text
     61af5648-4e25-4452-b3d6-9b822c0b4489: 'Tailwind Color' # Tailwind Color
     66c3e5d1-0a34-40db-b67a-6794ee6defb5: 'Info cards' # Info cards
-    71ea925b-34f0-4b0e-9d7e-f0f16840f2cf: 'Square card' # Square card
+    66cd225f-fdb6-49e8-9603-d8cb527c2ff1: 'Content cards' # Content cards
+    71ea925b-34f0-4b0e-9d7e-f0f16840f2cf: 'Type | Square card' # Type | Square card
+    72dced8e-04ec-481f-8fbb-72921e2ac568: 'Type | Landscape Card' # Type | Landscape Card
+    93e199ba-c647-4e82-bdcf-500a3c604ec0: 'CTA Text' # CTA Text
+    097b7fd0-5e08-42b5-975a-6aeef5f9223a: 'Matrix | AdSense banner' # Matrix | AdSense banner
     138df22e-99cf-4a20-93ae-2f05fd455aef: 'Matrix | Blog cards' # Matrix | Blog cards
-    190ed61d-ffbd-480b-ad5f-0b1e2b935b0a: 'Info card' # Info card
+    190ed61d-ffbd-480b-ad5f-0b1e2b935b0a: 'Type | Info card' # Type | Info card
     306f4436-3d40-48fd-9265-1f7daaa5fa05: 'Page body' # Page body
     616e4fd4-0f3f-428b-96b5-3ae84ffb392d: 'YouthBreaks EN' # YouthBreaks EN
     672ff7e5-1a72-4fc4-a1d4-a97441e26779: text # text
@@ -265,6 +272,7 @@ meta:
     a3596374-3136-4033-b665-3ef233eff6b7: 'Club config' # Club config
     ab7b1962-e0cf-44f5-a096-7aec91ca594f: 'YouthBreaks NL - Mallorca' # YouthBreaks NL - Mallorca
     adbc97df-3a4b-42c2-97e7-184a58ab3b76: 'Uitgaan overview' # Uitgaan overview
+    b0699c88-864d-4664-a54d-eb399d8bc3a4: 'Site emoji ' # Site emoji 
     b079f368-871a-4c20-9fa2-b69dce13d7ce: Navigation # Navigation
     b1dc1c79-b214-4f87-bfc2-a9ddb73168a2: 'R2 Lloret de Mar' # R2 Lloret de Mar
     b1e8fa5f-153d-4197-8844-04f0a3fcef9e: 'Page type | Club detail' # Page type | Club detail
@@ -274,7 +282,9 @@ meta:
     b9723ca6-1d73-46e2-a144-756cd3e36e11: 'Type | Navigation' # Type | Navigation
     b11847cc-da8d-47c7-bba3-200d6e853d6e: 'Hero image' # Hero image
     bc0428b0-cc69-43d9-85c4-85b3719f296a: 'Image position' # Image position
+    bcbc1e73-a8c3-408c-8dae-7d385271d68b: 'Landscape Cards' # Landscape Cards
     c0b15c5d-7161-40ce-82ae-d90d4efe91c0: Simple # Simple
+    c08e90d5-0a00-4bf4-8be6-d1d6caf7fe67: USP # USP
     c16c87e7-aa54-415e-b8b4-a8d626d68b18: Adress # Adress
     c58ce353-a590-49b2-93a4-f2abd4f104f3: 'YouthBreaks NL - Lloret de Mar' # YouthBreaks NL - Lloret de Mar
     cf788f76-ff1e-44e5-a8a6-e68675ee1250: 'Club images' # Club images
@@ -309,6 +319,14 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0
+  palette:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  retour:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.0.12
   seomatic:
     edition: standard
     enabled: true

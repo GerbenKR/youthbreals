@@ -6,7 +6,7 @@
 {% set image = image|default(null) %}
 
 <div class="group w-full overflow-hidden">
-    <div class="h-[220px] bg-gray-100 rounded-md overflow-hidden">
+    <div class="aspect-video w-full bg-gray-100 rounded-md overflow-hidden">
         {{ utils.image(image, 'w-full h-full object-cover pointer-events-none group-hover:scale-105 duration-200 ease-in-out', 400, 250, 360, 250) }}
     </div>
 

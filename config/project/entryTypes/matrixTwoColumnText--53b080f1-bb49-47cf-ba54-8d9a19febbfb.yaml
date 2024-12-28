@@ -1,0 +1,53 @@
+color: green
+fieldLayouts:
+  05f30797-3785-4f6d-8ce9-5e10522feaa8:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2024-12-27T22:10:58+00:00'
+            elementCondition: null
+            fieldUid: 672ff7e5-1a72-4fc4-a1d4-a97441e26779 # text
+            handle: column1
+            includeInCards: false
+            instructions: null
+            label: 'Column 1'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 184b1102-c0c9-44e3-9628-3b01bdaacc12
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-12-27T22:10:58+00:00'
+            elementCondition: null
+            fieldUid: 672ff7e5-1a72-4fc4-a1d4-a97441e26779 # text
+            handle: column2
+            includeInCards: false
+            instructions: null
+            label: 'Column 2'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 13d1acd5-0801-4b13-9ab2-1d1a7f6ca187
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhoud
+        uid: 8030225b-1c43-4a8f-a295-de3b9900e499
+        userCondition: null
+handle: matrixTwoColumnText
+hasTitleField: false
+icon: ''
+name: 'Matrix | Two column text'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: ''
+slugTranslationMethod: site
+titleFormat: ''
+titleTranslationKeyFormat: ''
+titleTranslationMethod: site

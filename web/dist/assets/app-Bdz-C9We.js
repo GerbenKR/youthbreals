@@ -1,0 +1,1 @@
+import{m as e,a as o}from"./alpinejs-CnGfEmWN.js";const a=()=>({open:!1,openNavigation(){this.open=!0,document.body.style.overflow="hidden"},closeNavigation(){this.open=!1,document.body.style.overflow=""}});e.plugin(o);e.data("Header",a);e.start();

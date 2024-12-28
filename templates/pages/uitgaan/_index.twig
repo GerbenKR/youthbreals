@@ -2,18 +2,41 @@
 
 {% set clubsOverview = craft.entries().section('clubsOverview').one() %}
 
-{% set fullWithPage = false %}
+{% set fullWithPage = true %}
 
 {% block content %}
     {% include "components/hero/_content" %}
 
-    <div class="container grid grid-cols-1 lg:grid-cols-12 gap-4">
+    <div class="container">
+        <article class="text-container">
+            {% include "components/matrix/_matrix" %}
+        </article>
+    </div>
+
+    {# <div class="container grid grid-cols-1 lg:grid-cols-12 gap-4">
         <article class="col-span-8 text-container order-last lg:order-first">
             {% include "components/matrix/_matrix" %}
         </article>
 
-        <aside class="lg:col-span-4 flex flex-col gap-4">
-            <a href="{{ clubsOverview.url }}" target="_blank" class="p-4 font-medium bg-pink-100">Alle clubs in {{ site.siteName }} &raquo;</a>
+        <aside class="col-span-4 flex flex-col gap-4">
+            <div class="w-full aspect-square bg-gray-100"></div>
+
+            <div class="flex flex-col gap-3">
+                <a href="{{ currentSite.baseUrl }}" class="hover:underline font-bold">Meer {{ site.siteName }}:</a>
+
+                <a href="{{ currentSite.baseUrl }}/clubs" class="bg-primary rounded-md text-white font-bold p-4 flex items-center justify-between group">
+                    <span class="group-hover:underline">Clubs</span>
+                    <div class="group-hover:-translate-x-2 duration-200">
+                        &raquo;
+                    </div>
+                </a>
+                <a href="{{ currentSite.baseUrl }}/blog" class="bg-primary rounded-md text-white font-bold p-4 flex items-center justify-between group">
+                    <span class="group-hover:underline">Blogs</span>
+                    <div class="group-hover:-translate-x-2 duration-200">
+                        &raquo;
+                    </div>
+                </a>
+            </div>
         </aside>
-    </div>
+    </div> #}
 {% endblock content %}

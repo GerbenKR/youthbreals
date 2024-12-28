@@ -1,13 +1,13 @@
 columnSuffix: null
-handle: infoCards
+handle: contentCards
 instructions: null
-name: 'Info cards'
+name: 'Content cards'
 searchable: false
 settings:
   createButtonLabel: null
   defaultIndexViewMode: cards
   entryTypes:
-    - 190ed61d-ffbd-480b-ad5f-0b1e2b935b0a # Type | Info card
+    - 18be273d-a077-4e3a-b874-712fefb90c8a # Type | Content card
   includeTableView: false
   maxEntries: null
   minEntries: null

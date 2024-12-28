@@ -1,13 +1,13 @@
 columnSuffix: null
-handle: infoCards
+handle: clubUsps
 instructions: null
-name: 'Info cards'
+name: 'Club usp''s'
 searchable: false
 settings:
   createButtonLabel: null
   defaultIndexViewMode: cards
   entryTypes:
-    - 190ed61d-ffbd-480b-ad5f-0b1e2b935b0a # Type | Info card
+    - c08e90d5-0a00-4bf4-8be6-d1d6caf7fe67 # USP
   includeTableView: false
   maxEntries: null
   minEntries: null

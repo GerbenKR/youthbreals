@@ -1,0 +1,9 @@
+{% set title = title|default('') %}
+{% set description = description|default('') %}
+
+<div class="bg-white p-4 rounded-lg content-card-shadow">
+    <h3 class="text-primary h4">{{ title }}</h3>
+    <div class="remove-last-margin">
+        {{ description }}
+    </div>
+</div>

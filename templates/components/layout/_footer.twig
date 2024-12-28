@@ -5,37 +5,74 @@
 {% set uitgaanOverview = craft.entries().section('uitgaanOverview').one() %}
 {% set blogOverview = craft.entries().section('blogOverview').one() %}
 
-
-<footer class="container py-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
-    <div>
-        <h3 class="text-lg font-semibold">Voorbereid op Jongerenvakantie</h3>
-        <p>© 2024 Voorbereid op Jongerenvakantie.</p>
-        <p><i>Deze website maakt deels gebruik van beeldmateriaal van derden.</i></p>
-        <p>info@voorbereid-op-vakantie.nl</p>
+<footer class="mt-20 container grid grid-cols-12 gap-8">
+    <div class="col-span-4">
+        <h3 class="h3">Voorbereid op Jongerenvakantie</h3>
+        <p>GOGO zorgt voor de vetste vakanties naar de populairste zomerbestemmingen die van A tot Z perfect geregeld zijn; rechtstreekse vluchten, gezellige busreizen, de best gelegen accommodaties, de leukste reisleiders en de wildste zomerfeesten van het jaar die je niet snel zal vergeten.</p>
     </div>
-    <div>
-        <h4 class="font-bold">Bestemmingen</h4>
-        <ul class="mt-3">
+    <div class="col-span-2">
+        <div class="font-bold">Bestemmingen</div>
+        <ul class="mt-2">
             {% for city in cities %}
                 {% set globalSet = craft.globalSets().handle('site').siteId(city.id).one() %}
                 <li>
-                    <a href="{{ city.baseUrl }}" class="hover:underline">{{ globalSet.siteName }}</a>
+                    <a href="{{ city.baseUrl }}" class="hover:underline text-base">{{ globalSet.siteName }}</a>
                 </li>
             {% endfor %}
         </ul>
     </div>
-    <div>
-        <h4 class="font-bold">Pagina's</h4>
-        <ul class="mt-3">
+    <div class="col-span-2">
+        <div class="font-bold">Algemene pagina's</div>
+        <ul class="mt-2">
             <li>
-                <a href="{{ uitgaanOverview.url }}" class="hover:underline">Uitgaan in {{ site.siteName }}</a>
+                <a href="/blog" class="hover:underline text-base">Blog</a>
             </li>
             <li>
-                <a href="{{ clubOverview.url }}" class="hover:underline">Clubs in {{ site.siteName }}</a>
+                <a href="/bestemmingen" class="hover:underline text-base">Bestemmingen</a>
             </li>
             <li>
-                <a href="{{ blogOverview.url }}" class="hover:underline">Blogs over {{ site.siteName }}</a>
+                <a href="/reisorganisaties" class="hover:underline text-base">Reisorganisaties</a>
+            </li>
+            <li>
+                <a href="/reisorganisaties" class="hover:underline text-base">Over ons</a>
             </li>
         </ul>
     </div>
+    {% if currentSite.primary == false %}
+        <div class="col-span-4">
+            <div class="p-4 bg-primary text-white w-full h-full rounded-tl-lg rounded-tr-lg min-h-[260px]">
+                <div class="text-h4">{{ site.siteEmoji|default('')}} {{ site.siteName|default('') }}</div>
+
+                <ul class="mt-3">
+                    <li>
+                        <a href="{{ currentSite.baseUrl }}" class="hover:underline">Home</a>
+                    </li>
+                    {% if blogOverview %}
+                        <li>
+                            <a href="{{ blogOverview.url }}" class="hover:underline">Blogs</a>
+                        </li>
+                    {% endif %}
+                    {% if uitgaanOverview %}
+                        <li>
+                            <a href="{{ uitgaanOverview.url }}" class="hover:underline">Uitgaan</a>
+                        </li>
+                    {% endif %}
+                    {% if clubOverview %}
+                        <li>
+                            <a href="{{ clubOverview.url }}" class="hover:underline">Clubs</a>
+                        </li>
+                    {% endif %}
+                </ul>
+            </div>
+        </div>
+    {% endif %}
 </footer>
+<div class="py-4 bg-gray-50">
+    <div class="container flex items-center gap-4">
+        <a href="/disclaimer" class="hover:underline">disclaimer</a>
+        <a href="/privacyverklaring" class="hover:underline">Privacyverklaring</a>
+        <a href="/cookiebeleid" class="hover:underline">Cookiebeleid</a>
+        <a href="/sitemap.xml" class="hover:underline">sitemap</a>
+        <a href="info@voorbereid-op-vakantie.nl" class="hover:underline">info@voorbereid-op-vakantie.nl</a>
+    </div>
+</div>

@@ -17,6 +17,8 @@ settings:
     - d2cae82f-ab32-40f8-96e4-971e21d04bcc # Matrix | Cards
     - 138df22e-99cf-4a20-93ae-2f05fd455aef # Matrix | Blog cards
     - 9f43eb87-b2fc-4335-a926-7e54dba6d119 # Matrix | Uitgaan detail overview
+    - 53b080f1-bb49-47cf-ba54-8d9a19febbfb # Matrix | Two column text
+    - 097b7fd0-5e08-42b5-975a-6aeef5f9223a # Matrix | AdSense banner
   purifierConfig: null
   purifyHtml: true
   showUnpermittedFiles: false

@@ -1,17 +1,95 @@
+{% import 'macros/_utils' as utils %}
 {% extends "layouts/_default" %}
 
 {% set fullWithPage = false %}
 
 {% block content %}
 
-    {% include "components/hero/_blog" %}
+{% set siteId = null %}
 
-    <div class="container grid grid-cols-1 lg:grid-cols-12 gap-4">
+{% if entry.gerelateerdAan %}
+    {% switch entry.gerelateerdAan.value %}
+        {% case "albufeira" %}
+            {% set siteId = 2 %}
+        {% case "lloret-de-mar" %}
+            {% set siteId = 3 %}
+        {% case "chersonissos" %}
+            {% set siteId = 7 %}
+        {% case "mallorca" %}
+            {% set siteId = 8 %}
+        {% default %}
+            {#  #}
+    {% endswitch %}
+{% endif %}
+
+    {# {% include "components/hero/_blog" %} #}
+    {% set site = craft.app.sites.getSiteById(siteId) %}
+
+    <div class="container">
+        <div class="aspect-video relative bg-yellow-50">
+            {% if entry.heroImage|length and entry.heroImage.one().source %}
+                <div class="px-2 absolute bottom-4 right-4 bg-black/50 text-white rounded">Afbeelding: {{ entry.heroImage.one().source }}</div>
+            {% endif %}
+            {{ utils.image(entry.heroImage.one(), 'w-full h-full object-cover rounded-md', 1070, 600, 360, 200) }}
+        </div>
+    </div>
+
+    <div class="mt-5 container grid grid-cols-1 lg:grid-cols-12 gap-8">
         <article class="col-span-8 text-container">
+
+            <div class="pb-5 mb-5 border-b border-gray-200">
+                <h1 class="!text-3xl">{{ entry.heroTitle|default(entry.title) }}</h1>
+
+                <div class="mt-2 flex items-center gap-2 text-gray-700">
+                    <span class="">{{ entry.postDate|date("j M, Y")|lower }}</span>
+                    &#8226;
+                    <span>geplaatst in <a href="/{{ entry.gerelateerdAan }}" class="!no-underline text-primary !hover:underline">{{ entry.gerelateerdAan.label }}</a></span>
+                    &#8226;
+                    <span>door <a href="/auteur/gerben" class="!no-underline text-primary !hover:underline">Gerben</a></span>
+                </div>
+            </div>
+
             {% include "components/matrix/_matrix" %}
         </article>
 
-        {# <aside class="cols-span-4"></aside> #}
+        <aside class="col-span-4 flex flex-col gap-4">
+            <div class="w-full aspect-square bg-gray-100"></div>
+
+            <div class="flex flex-col gap-3">
+                <a href="/{{ entry.gerelateerdAan }}" class="hover:underline font-bold">Meer {{ entry.gerelateerdAan.label }}:</a>
+
+                <a href="/{{ entry.gerelateerdAan }}/uitgaan" class="bg-primary rounded-md text-white font-bold p-4 flex items-center justify-between group">
+                    <span class="group-hover:underline">Uitgaan</span>
+                    <div class="group-hover:-translate-x-2 duration-200">
+                        &raquo;
+                    </div>
+                </a>
+                <a href="/{{ entry.gerelateerdAan }}/clubs" class="bg-primary rounded-md text-white font-bold p-4 flex items-center justify-between group">
+                    <span class="group-hover:underline">Clubs</span>
+                    <div class="group-hover:-translate-x-2 duration-200">
+                        &raquo;
+                    </div>
+                </a>
+                <a href="/{{ entry.gerelateerdAan }}/blog" class="bg-primary rounded-md text-white font-bold p-4 flex items-center justify-between group">
+                    <span class="group-hover:underline">Blogs</span>
+                    <div class="group-hover:-translate-x-2 duration-200">
+                        &raquo;
+                    </div>
+                </a>
+                {# <a href="/{{ entry.gerelateerdAan }}/restaurants" class="bg-primary rounded-md text-white font-bold p-4 flex items-center justify-between group">
+                    <span class="group-hover:underline">Restaurants</span>
+                    <div class="group-hover:-translate-x-2 duration-200">
+                        &raquo;
+                    </div>
+                </a>
+                <a href="/{{ entry.gerelateerdAan }}/activiteiten" class="bg-primary rounded-md text-white font-bold p-4 flex items-center justify-between group">
+                    <span class="group-hover:underline">Activiteiten</span>
+                    <div class="group-hover:-translate-x-2 duration-200">
+                        &raquo;
+                    </div>
+                </a> #}
+            </div>
+        </aside>
     </div>
 
 {% endblock content %}

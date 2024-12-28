@@ -1,44 +1,91 @@
 
-{% set title = title|default(null) %}
-{% set description = description|default(null) %}
-{% set squareCards = squareCards|default(null) %}
-{% set infoCards = infoCards|default(null) %}
+{% set cta = cta|default(null) %}
 
-{% set gridClass = fullWithPage 
-    ? 'grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6' 
+{% set contentCards = contentCards|default(null) %}
+{% set infoCards = infoCards|default(null) %}
+{% set squareCards = squareCards|default(null) %}
+{% set landscapeCards = landscapeCards|default(null) %}
+
+{% set gridClass1 = fullWithPage 
+    ? 'grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4' 
     : 'grid grid-cols-1 sm:grid-cols-2 gap-6' %}
 
-<section class="my-3">
-    {% if squareCards and squareCards|length %}
+{% set gridClass2 = fullWithPage 
+    ? 'grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4' 
+    : 'grid grid-cols-1 sm:grid-cols-2 gap-6' %}
 
-        <ul class="{{ gridClass }} !m-0 !p-0">
-            {% for card in squareCards %}
-                <li class="list-none">
-                    <a href="{{ card.entry.one().url }}">
-                        {% include "components/cards/_square-card" with {
-                            title: card.title|default(card.entry.one().title)|default(null),
-                            subtitle: card.subtitle|default(null),
-                            image: card.entry.one().pageImage.one()|default(card.entry.one().clubImages.one())|default(null),
-                        } %}
-                    </a>
-                </li>
+<div class="mb-20">
+    {# Content cards #}
+    {% if contentCards and contentCards|length %}
+        <div class="{{ gridClass1 }}">
+            {% for card in contentCards %}
+                <a 
+                    href="{{ card.entry.one().url|default("#") }}" 
+                    title="{{ card.entry.one().title|default("") }}">
+                    {% include "components/cards/_content-card" with {
+                        title: card.entry.one().title|default(card.title)|default(),
+                        description: card.entry.one().pageDescription|default(card.description)|default(),
+                    } %}
+                </a>
             {% endfor %}
-        </ul>
+        </div>
     {% endif %}
 
     {% if infoCards and infoCards|length %}
-        <ul class="{{ gridClass }} !m-0 !p-0">
+        <div class="{{ gridClass2 }}">
             {% for card in infoCards %}
-                <li class="list-none">
-                    <a href="{{ card.entry.one().url }}">
-                        {% include "components/cards/_info-card" with {
-                            title: card.title|default(card.entry.one().title)|default(null),
-                            description: card.description|default(card.entry.one().heroDescription)|default(null),
-                            image: card.entry.one().pageImage.one()|default(card.entry.one().clubImages.one())|default(null),
-                        } %}
-                    </a>
-                </li>
+                <a 
+                    href="{{ card.entry.one().url|default("#") }}" 
+                    title="{{ card.entry.one().title|default("") }}">
+                    {% include "components/cards/_info-card" with {
+                        title: card.entry.one().title|default(card.title)|default(),
+                        description: card.entry.one().pageDescription|default(card.description)|default(),
+                        image: card.entry.one().pageImage.one()|default(null),
+                        ctaText: card.ctaText|default(null)
+                    } %}
+                </a>
             {% endfor %}
-        </ul>
+        </div>
     {% endif %}
-</section>
+
+    {% if squareCards and squareCards|length %}
+        <div class="{{ gridClass1 }}">
+            {% for card in squareCards %}
+                <a 
+                    href="{{ card.entry.one().url|default("#") }}" 
+                    title="{{ card.entry.one().title|default("") }}">
+                    {% include "components/cards/_square-card" with {
+                        title: card.entry.one().title|default(card.title)|default(),
+                        subtitle: card.subtitle|default(null),
+                        image: card.entry.one().pageImage.one()|default(null),
+                    } %}
+                </a>
+            {% endfor %}
+        </div>
+    {% endif %}
+
+    {% if landscapeCards and landscapeCards|length %}
+        <div class="{{ gridClass1 }}">
+            {% for card in landscapeCards %}
+                <a 
+                    href="{{ card.entry.one().url|default("#") }}" 
+                    title="{{ card.entry.one().title|default("") }}">
+                    {% include "components/cards/_landscape-card" with {
+                        title: card.entry.one().title|default(card.title)|default(),
+                        description: card.entry.one().pageDescription|default(card.description)|default(),
+                        image: card.entry.one().pageImage.one()|default(null),
+                        ctaText: card.ctaText|default(null)
+                    } %}
+                </a>
+            {% endfor %}
+        </div>
+    {% endif %}
+
+    {% if cta and cta|length %}
+        <div class="mt-4 flex items-center gap-3 justify-center">
+            {% for cta in cta %}
+                <a href="{{ cta.linkField }}" class="btn-primary">{{ cta.linkField.getCustomText() }}</a>
+            {% endfor %}
+        </div>
+    {% endif %}
+</div>

@@ -5,9 +5,11 @@
         "craftcms/ckeditor": "4.1.0",
         "craftcms/cms": "5.5.5",
         "jrrdnx/craft-cloudflare-r2": "^1.1",
+        "nystudio107/craft-retour": "5.0.4",
         "nystudio107/craft-seomatic": "^5.1",
         "nystudio107/craft-vite": "5.0.0",
         "sebastianlenz/linkfield": "dev-main",
+        "trendyminds/craft-palette": "5.1.2",
         "verbb/expanded-singles": "3.0.0",
         "verbb/super-table": "4.0.1",
         "vlucas/phpdotenv": "^5.4.0"

@@ -1,6 +1,6 @@
-color: null
+color: sky
 fieldLayouts:
-  c950c5e4-9221-41a0-99c4-7aea5640e849:
+  82a8b6f2-52da-4735-814d-ff17595efa7a:
     tabs:
       -
         elementCondition: null
@@ -10,7 +10,7 @@ fieldLayouts:
             autocomplete: false
             autocorrect: true
             class: null
-            dateAdded: '2024-12-16T11:32:08+00:00'
+            dateAdded: '2024-12-28T12:01:08+00:00'
             disabled: false
             elementCondition: null
             id: null
@@ -25,18 +25,18 @@ fieldLayouts:
             placeholder: null
             providesThumbs: false
             readonly: false
-            required: true
+            required: false
             size: null
             step: null
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: 6f4da3ac-bbdb-4276-b28f-fca213ec608d
+            uid: a0cdcc33-8c8f-4767-bb84-59e78fa2c719
             userCondition: null
             warning: null
             width: 100
           -
-            dateAdded: '2024-12-16T11:33:53+00:00'
+            dateAdded: '2024-12-28T12:04:05+00:00'
             elementCondition: null
             fieldUid: 79372943-5d5e-4ce9-8fca-001ceaeda8d5 # Description
             handle: null
@@ -47,12 +47,28 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 33403487-67d9-41ea-98d1-d402c508aea8
+            uid: 5474cad8-ed37-48df-a72c-693186910fee
             userCondition: null
             warning: null
             width: 100
           -
-            dateAdded: '2024-12-16T11:33:53+00:00'
+            dateAdded: '2024-12-28T12:04:16+00:00'
+            elementCondition: null
+            fieldUid: 93e199ba-c647-4e82-bdcf-500a3c604ec0 # CTA Text
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c652b863-f3f7-43f7-b3ac-29b91f5dee1a
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-12-28T12:04:05+00:00'
             elementCondition: null
             fieldUid: 3c7ea62a-0e10-4dca-889c-eb4f178473d6 # Entry
             handle: null
@@ -63,17 +79,17 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: ec434b4c-4ebb-4321-a0ba-5482fbe51ebb
+            uid: a6606238-3b17-4a88-b4f2-3919159d296b
             userCondition: null
             warning: null
             width: 100
         name: Inhoud
-        uid: 9b57d257-6e07-4cb4-9f12-c2f8a323cc37
+        uid: a11ba03c-a717-4f5a-90e2-2ebb2354133d
         userCondition: null
-handle: infoCard
+handle: typeLandscapeCard
 hasTitleField: true
 icon: ''
-name: 'Info card'
+name: 'Type | Landscape Card'
 showSlugField: true
 showStatusField: true
 slugTranslationKeyFormat: ''

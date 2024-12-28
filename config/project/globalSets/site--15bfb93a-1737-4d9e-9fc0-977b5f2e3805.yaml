@@ -5,6 +5,7 @@ fieldLayouts:
         elementCondition: null
         elements:
           -
+            dateAdded: '2024-12-22T21:01:46+00:00'
             elementCondition: null
             fieldUid: 4c8a2273-4983-45d3-8852-6ae588a5dcf0 # Site name
             handle: null
@@ -20,6 +21,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: '2024-12-22T21:01:46+00:00'
             elementCondition: null
             fieldUid: 6c70dec0-60bb-41ba-8577-35f5b06b9e13 # Site color
             handle: null
@@ -31,6 +33,22 @@ fieldLayouts:
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: 59855bc6-81a5-42fb-b925-0c98adc6e845
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-12-22T21:03:57+00:00'
+            elementCondition: null
+            fieldUid: b0699c88-864d-4664-a54d-eb399d8bc3a4 # Site emoji 
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3c198dbf-c9aa-4209-8832-fb2bc54f75b6
             userCondition: null
             warning: null
             width: 100
