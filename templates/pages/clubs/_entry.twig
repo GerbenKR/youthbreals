@@ -43,6 +43,24 @@
             </div>
 
             {% include "components/matrix/_matrix" %}
+
+            {% if entry.clubConfig.one().adress %}
+                <br>
+                <h2>Adres van {{ entry.title }}</h2>
+                <p>Het adres van {{ entry.title }} is <b>{{ entry.clubConfig.one().adress }}</b>.</p>
+
+                {% if entry.clubConfig.one().googleMapsUrl %}
+                    {# <h3>{{ entry.title }} Google Maps</h3> #}
+                    <p>Natuurlijk kun je ook met Google maps navigeren naar {{ entry.title }}, druk op de knop hier onder om Google Maps te openen</p>
+                    <a href="{{ entry.clubConfig.one().googleMapsUrl|default(null) }}" target="_blank" class="btn-primary">Google Maps openen</a>
+                {% endif %}
+            {% endif %}
+
+            <br>
+            <br>
+            <h2>{{ entry.title }} lineup</h2>
+            <p>Op dit moment is nog niet bekend welke artisten in 2025 zullen optreden in {{ entry.title }}. Zodra dit bekend is werken we deze pagina bij. Houd deze pagina dus goed in de gaten!</p>
+
         </article>
 
         <aside class="col-span-4 flex flex-col gap-4">
