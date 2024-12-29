@@ -82,7 +82,7 @@
     {% endif %}
 
     {% if cta and cta|length %}
-        <div class="mt-4 flex items-center gap-3 justify-center">
+        <div class="mt-4 flex items-center gap-3 justify-center flex-wrap">
             {% for cta in cta %}
                 <a href="{{ cta.linkField }}" class="btn-primary">{{ cta.linkField.getCustomText() }}</a>
             {% endfor %}

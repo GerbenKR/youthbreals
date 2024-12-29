@@ -9,7 +9,7 @@
             <p class="text-white text-shadow">{{ entry.heroDescription }}</p>
 
             {% if entry.heroCta|length %}
-                <div class="mt-4 flex items-center gap-3 justify-center">
+                <div class="mt-4 flex items-center gap-3 justify-center flex-wrap">
                     {% for cta in entry.heroCta.all() %}
                         <a href="{{ cta.linkField }}" class="btn-primary">{{ cta.linkField.getCustomText() }}</a>
                     {% endfor %}
