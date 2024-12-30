@@ -1,4 +1,4 @@
-dateModified: 1735411437
+dateModified: 1735514019
 elementSources:
   craft\elements\Entry:
     -
@@ -326,6 +326,7 @@ plugins:
   retour:
     edition: standard
     enabled: true
+    licenseKey: GX2WHEJTT5VBPRSLVMXSAJB2
     schemaVersion: 3.0.12
   seomatic:
     edition: standard

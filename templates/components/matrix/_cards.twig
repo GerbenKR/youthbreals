@@ -19,12 +19,21 @@
     {% if contentCards and contentCards|length %}
         <div class="{{ gridClass1 }}">
             {% for card in contentCards %}
+                {% set linkedEntry = null %}
+
+                {% if card.entry is not empty and card.entry is instance of('lenz\\linkfield\\models\\element\\ElementLink') %}
+                    {% set linkedEntry = craft.entries()
+                        .id(card.entry.linkedId)
+                        .siteId(card.entry.linkedSiteId)
+                        .one() %}
+                {% endif %}
+
                 <a 
-                    href="{{ card.entry.one().url|default("#") }}" 
-                    title="{{ card.entry.one().title|default("") }}">
+                    href="{{ linkedEntry.url|default("#") }}" 
+                    title="{{ linkedEntry.title|default("") }}">
                     {% include "components/cards/_content-card" with {
-                        title: card.entry.one().title|default(card.title)|default(),
-                        description: card.entry.one().pageDescription|default(card.description)|default(),
+                        title: card.title ?: (linkedEntry ? linkedEntry.title : ""),
+                        description: card.description ?: (linkedEntry ? linkedEntry.pageDescription : ""),
                     } %}
                 </a>
             {% endfor %}
@@ -34,13 +43,22 @@
     {% if infoCards and infoCards|length %}
         <div class="{{ gridClass2 }}">
             {% for card in infoCards %}
+                {% set linkedEntry = null %}
+
+                {% if card.entry is not empty and card.entry is instance of('lenz\\linkfield\\models\\element\\ElementLink') %}
+                    {% set linkedEntry = craft.entries()
+                        .id(card.entry.linkedId)
+                        .siteId(card.entry.linkedSiteId)
+                        .one() %}
+                {% endif %}
+
                 <a 
-                    href="{{ card.entry.one().url|default("#") }}" 
-                    title="{{ card.entry.one().title|default("") }}">
+                    href="{{ linkedEntry.url|default("#") }}" 
+                    title="{{ linkedEntry.title|default("") }}">
                     {% include "components/cards/_info-card" with {
-                        title: card.entry.one().title|default(card.title)|default(),
-                        description: card.entry.one().pageDescription|default(card.description)|default(),
-                        image: card.entry.one().pageImage.one()|default(null),
+                        title: card.title ?: (linkedEntry ? linkedEntry.title : ""),
+                        description: card.description ?: (linkedEntry ? linkedEntry.pageDescription : ""),
+                        image: linkedEntry.pageImage.one()|default(null),
                         ctaText: card.ctaText|default(null)
                     } %}
                 </a>
@@ -51,13 +69,22 @@
     {% if squareCards and squareCards|length %}
         <div class="{{ gridClass1 }}">
             {% for card in squareCards %}
+                {% set linkedEntry = null %}
+
+                {% if card.entry is not empty and card.entry is instance of('lenz\\linkfield\\models\\element\\ElementLink') %}
+                    {% set linkedEntry = craft.entries()
+                        .id(card.entry.linkedId)
+                        .siteId(card.entry.linkedSiteId)
+                        .one() %}
+                {% endif %}
+
                 <a 
-                    href="{{ card.entry.one().url|default("#") }}" 
-                    title="{{ card.entry.one().title|default("") }}">
+                    href="{{ linkedEntry.url|default("#") }}" 
+                    title="{{ linkedEntry.title|default("") }}">
                     {% include "components/cards/_square-card" with {
-                        title: card.entry.one().title|default(card.title)|default(),
+                        title: card.title ?: (linkedEntry ? linkedEntry.title : ""),
                         subtitle: card.subtitle|default(null),
-                        image: card.entry.one().pageImage.one()|default(null),
+                        image: linkedEntry.pageImage.one()|default(null),
                     } %}
                 </a>
             {% endfor %}
@@ -67,13 +94,22 @@
     {% if landscapeCards and landscapeCards|length %}
         <div class="{{ gridClass1 }}">
             {% for card in landscapeCards %}
+                {% set linkedEntry = null %}
+
+                {% if card.entry is not empty and card.entry is instance of('lenz\\linkfield\\models\\element\\ElementLink') %}
+                    {% set linkedEntry = craft.entries()
+                        .id(card.entry.linkedId)
+                        .siteId(card.entry.linkedSiteId)
+                        .one() %}
+                {% endif %}
+
                 <a 
-                    href="{{ card.entry.one().url|default("#") }}" 
-                    title="{{ card.entry.one().title|default("") }}">
+                    href="{{ linkedEntry.url|default("#") }}" 
+                    title="{{ linkedEntry.title|default("") }}">
                     {% include "components/cards/_landscape-card" with {
-                        title: card.entry.one().title|default(card.title)|default(),
-                        description: card.entry.one().pageDescription|default(card.description)|default(),
-                        image: card.entry.one().pageImage.one()|default(null),
+                        title: card.title ?: (linkedEntry ? linkedEntry.title : ""),
+                        description: card.description ?: (linkedEntry ? linkedEntry.pageDescription : ""),
+                        image: linkedEntry.pageImage.one()|default(null),
                         ctaText: card.ctaText|default(null)
                     } %}
                 </a>
