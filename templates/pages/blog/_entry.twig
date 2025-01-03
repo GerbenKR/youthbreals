@@ -22,8 +22,9 @@
     {% endswitch %}
 {% endif %}
 
-    {# {% include "components/hero/_blog" %} #}
-    {% set site = craft.app.sites.getSiteById(siteId) %}
+    {% if siteId is not null %}
+        {% set site = craft.app.sites.getSiteById(siteId) %}
+    {% endif %}
 
     <div class="container">
         <div class="aspect-video relative bg-yellow-50">
@@ -43,8 +44,10 @@
                 <div class="mt-2 flex items-center gap-2 text-gray-700">
                     <span class="">{{ entry.postDate|date("j M, Y")|lower }}</span>
                     &#8226;
-                    <span>geplaatst in <a href="/{{ entry.gerelateerdAan }}" class="!no-underline text-primary !hover:underline">{{ entry.gerelateerdAan.label }}</a></span>
-                    &#8226;
+                    {% if siteId is not null %}
+                        <span>geplaatst in <a href="/{{ entry.gerelateerdAan }}" class="!no-underline text-primary !hover:underline">{{ entry.gerelateerdAan.label }}</a></span>
+                        &#8226;
+                    {% endif %}
                     <span>door <a href="/auteur/gerben" class="!no-underline text-primary !hover:underline">Gerben</a></span>
                 </div>
             </div>
@@ -55,40 +58,42 @@
         <aside class="col-span-4 flex flex-col gap-4">
             <div class="w-full aspect-square bg-gray-100"></div>
 
-            <div class="flex flex-col gap-3">
-                <a href="/{{ entry.gerelateerdAan }}" class="hover:underline font-bold">Meer {{ entry.gerelateerdAan.label }}:</a>
+            {% if  siteId is not null  %}
+                <div class="flex flex-col gap-3">
+                    <a href="/{{ entry.gerelateerdAan }}" class="hover:underline font-bold">Meer {{ entry.gerelateerdAan.label }}:</a>
 
-                <a href="/{{ entry.gerelateerdAan }}/uitgaan" class="bg-primary rounded-md text-white font-bold p-4 flex items-center justify-between group">
-                    <span class="group-hover:underline">Uitgaan</span>
-                    <div class="group-hover:-translate-x-2 duration-200">
-                        &raquo;
-                    </div>
-                </a>
-                <a href="/{{ entry.gerelateerdAan }}/clubs" class="bg-primary rounded-md text-white font-bold p-4 flex items-center justify-between group">
-                    <span class="group-hover:underline">Clubs</span>
-                    <div class="group-hover:-translate-x-2 duration-200">
-                        &raquo;
-                    </div>
-                </a>
-                <a href="/{{ entry.gerelateerdAan }}/blog" class="bg-primary rounded-md text-white font-bold p-4 flex items-center justify-between group">
-                    <span class="group-hover:underline">Blogs</span>
-                    <div class="group-hover:-translate-x-2 duration-200">
-                        &raquo;
-                    </div>
-                </a>
-                {# <a href="/{{ entry.gerelateerdAan }}/restaurants" class="bg-primary rounded-md text-white font-bold p-4 flex items-center justify-between group">
-                    <span class="group-hover:underline">Restaurants</span>
-                    <div class="group-hover:-translate-x-2 duration-200">
-                        &raquo;
-                    </div>
-                </a>
-                <a href="/{{ entry.gerelateerdAan }}/activiteiten" class="bg-primary rounded-md text-white font-bold p-4 flex items-center justify-between group">
-                    <span class="group-hover:underline">Activiteiten</span>
-                    <div class="group-hover:-translate-x-2 duration-200">
-                        &raquo;
-                    </div>
-                </a> #}
-            </div>
+                    <a href="/{{ entry.gerelateerdAan }}/uitgaan" class="bg-primary rounded-md text-white font-bold p-4 flex items-center justify-between group">
+                        <span class="group-hover:underline">Uitgaan</span>
+                        <div class="group-hover:-translate-x-2 duration-200">
+                            &raquo;
+                        </div>
+                    </a>
+                    <a href="/{{ entry.gerelateerdAan }}/clubs" class="bg-primary rounded-md text-white font-bold p-4 flex items-center justify-between group">
+                        <span class="group-hover:underline">Clubs</span>
+                        <div class="group-hover:-translate-x-2 duration-200">
+                            &raquo;
+                        </div>
+                    </a>
+                    <a href="/{{ entry.gerelateerdAan }}/blog" class="bg-primary rounded-md text-white font-bold p-4 flex items-center justify-between group">
+                        <span class="group-hover:underline">Blogs</span>
+                        <div class="group-hover:-translate-x-2 duration-200">
+                            &raquo;
+                        </div>
+                    </a>
+                    {# <a href="/{{ entry.gerelateerdAan }}/restaurants" class="bg-primary rounded-md text-white font-bold p-4 flex items-center justify-between group">
+                        <span class="group-hover:underline">Restaurants</span>
+                        <div class="group-hover:-translate-x-2 duration-200">
+                            &raquo;
+                        </div>
+                    </a>
+                    <a href="/{{ entry.gerelateerdAan }}/activiteiten" class="bg-primary rounded-md text-white font-bold p-4 flex items-center justify-between group">
+                        <span class="group-hover:underline">Activiteiten</span>
+                        <div class="group-hover:-translate-x-2 duration-200">
+                            &raquo;
+                        </div>
+                    </a> #}
+                </div>
+            {% endif %}
         </aside>
     </div>
 
