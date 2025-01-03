@@ -36,7 +36,7 @@
             <meta name="referrer" content="origin-when-cross-origin" />
 
             {# Favicon #}
-            {# {% set icon = '/img/favicon.png' %}
+            {% set icon = '/img/favicon.png' %}
             {% set sizesIcon = [192, 48, 32, 16] %}
             {% set sizesAppleTouch = [180] %}
             {% for faviconSize in sizesIcon %}
@@ -53,7 +53,7 @@
                     sizes: faviconSize~'x'~faviconSize,
                     href: craft.vite.asset(icon, true)
                 }) }}
-            {% endfor %} #}
+            {% endfor %}
         </head>
 
     <body class="antialiased body-wrapper" style="--primary-color: {{ site.siteColor }};">

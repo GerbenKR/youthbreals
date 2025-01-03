@@ -18,7 +18,16 @@ export default defineConfig(({ command }) => {
             }),
             compression({
                 exclude: [/\.(br)$/, /\.(gz)$/]
-            })
+            }),
+            viteStaticCopy({
+                targets: [
+                    {
+                        src: 'src/img',
+                        dest: ''
+                    }
+                ]
+            }),
+
         ],
         build: {
             manifest: true,
