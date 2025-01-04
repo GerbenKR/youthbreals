@@ -1,7 +1,9 @@
 {% import 'macros/_utils' as utils %}
 
 <section class="mb-8 relative w-full {% if entry.heroDescription %} h-[350px] {% else %}h-[250px]  {% endif %} flex flex-col items-center justify-center bg-cover bg-center bg-gray-50">
-    {{ utils.image(entry.heroImage.one(), 'w-full h-full object-cover pointer-events-none', 1885, 350, 665, 250) }}
+    {% if entry.heroImage is defined and entry.heroImage|length %}
+        {{ utils.image(entry.heroImage.one(), 'w-full h-full object-cover pointer-events-none', 1885, 350, 665, 250) }}
+    {% endif %}
 
     <div class="absolute top-0 left-0 w-full h-full flex items-center justify-center flex-col text-center">
         <h1 class="text-3xl font-semibold text-white text-shadow">{{ entry.heroTitle }}</h1>
